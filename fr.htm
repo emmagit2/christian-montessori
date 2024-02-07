@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Text and Background Color Changer</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+
+    #colorText {
+      font-size: 24px;
+      margin: 20px;
+      display: inline-block;
+      padding: 10px;
+      transition: background-color 0.5s ease, color 0.5s ease;
+    }
+  </style>
+</head>
+<body>
+
+<p id="colorText">This is a text element with a background color.</p>
+
+<script>
+  const texts = [
+    "Innovation Hub",
+    "Explore Possibilities",
+    "Unleash Creativity",
+    "Code and Create",
+    "Transform Ideas",
+  ];
+
+  const predefinedColors = ["#3498db", "#e74c3c", "#2ecc71", "#f39c12", "#9b59b6", "#1abc9c"];
+  let currentColorIndex = 0;
+
+  let currentTextIndex = 0;
+  let typingTimeout;
+
+  // Start the typing animation when the page loads
+  window.onload = function() {
+    typeText(texts[currentTextIndex]);
+  };
+
+  function typeText(text) {
+    const colorTextElement = document.getElementById("colorText");
+
+    // Use predefined background color
+    colorTextElement.style.backgroundColor = predefinedColors[currentColorIndex];
+
+    currentColorIndex = (currentColorIndex + 1) % predefinedColors.length; // Cycle through colors
+    currentTextIndex = 0;
+    colorTextElement.innerHTML = ''; // Clear existing text
+    typeNextCharacter(text);
+  }
+
+  function typeNextCharacter(text) {
+    const colorTextElement = document.getElementById("colorText");
+
+    if (currentTextIndex < text.length) {
+      colorTextElement.innerHTML += text.charAt(currentTextIndex);
+      currentTextIndex++;
+      typingTimeout = setTimeout(() => typeNextCharacter(text), 100); // Adjust the delay here (e.g., 100 milliseconds)
+    } else {
+      // After typing is complete, wait for a moment and then change colors again
+      setTimeout(() => changeColors(), 2000); // Adjust the delay here (e.g., 2000 milliseconds = 2 seconds)
+    }
+  }
+
+  function changeColors() {
+    // Randomly select the next text from the array
+    const nextText = texts[Math.floor(Math.random() * texts.length)];
+
+    // Display the next text with typing effect
+    typeText(nextText);
+  }
+</script>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Text and Background Color Changer</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+
+    #colorText {
+      font-size: 24px;
+      margin: 20px;
+      display: inline-block;
+      padding: 10px;
+      transition: background-color 0.5s ease, color 0.5s ease;
+    }
+  </style>
+</head>
+<body>
+
+<p id="colorText">This is a text element with a background color.</p>
+
+<script>
+  const texts = [
+    "Innovation Hub",
+    "Explore Possibilities",
+    "Unleash Creativity",
+    "Code and Create",
+    "Transform Ideas",
+  ];
+
+  const predefinedColors = ["#3498db", "#e74c3c", "#2ecc71", "#f39c12", "#9b59b6", "#1abc9c"];
+  let currentColorIndex = 0;
+
+  let currentTextIndex = 0;
+  let typingTimeout;
+
+  // Start the typing animation when the page loads
+  window.onload = function() {
+    typeText(texts[currentTextIndex]);
+  };
+
+  function typeText(text) {
+    const colorTextElement = document.getElementById("colorText");
+
+    // Use predefined background color
+    colorTextElement.style.backgroundColor = predefinedColors[currentColorIndex];
+
+    currentColorIndex = (currentColorIndex + 1) % predefinedColors.length; // Cycle through colors
+    currentTextIndex = 0;
+    colorTextElement.innerHTML = ''; // Clear existing text
+    typeNextCharacter(text);
+  }
+
+  function typeNextCharacter(text) {
+    const colorTextElement = document.getElementById("colorText");
+
+    if (currentTextIndex < text.length) {
+      colorTextElement.innerHTML += text.charAt(currentTextIndex);
+      currentTextIndex++;
+      typingTimeout = setTimeout(() => typeNextCharacter(text), 100); // Adjust the delay here (e.g., 100 milliseconds)
+    } else {
+      // After typing is complete, wait for a moment and then change colors again
+      setTimeout(() => changeColors(), 2000); // Adjust the delay here (e.g., 2000 milliseconds = 2 seconds)
+    }
+  }
+
+  function changeColors() {
+    // Randomly select the next text from the array
+    const nextText = texts[Math.floor(Math.random() * texts.length)];
+
+    // Display the next text with typing effect
+    typeText(nextText);
+  }
+</script>
+
+</body>
+</html>

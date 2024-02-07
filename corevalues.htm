@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>school app</title>
+          <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+        />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="school.css">
+ <style>
+     .row_items{
+        text-align: center;
+        border-radius: 5px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        background-color: white;
+      padding: 10px;
+      margin-top: 4%;
+      
+      }
+      .row_items h3{
+        text-transform: capitalize;
+        position: relative;
+        width: 50%;
+        padding: 5px;
+        margin: 0px auto;
+      }
+      .row_items p{
+        padding: 10px;
+        font-size: 17px;
+      }
+       .row_items h3:before{
+        position: absolute;
+        content: "";
+        width: 50%;
+        border-radius: 20px;
+        background-color: #ec7330;
+        height: 5px;
+        bottom: 0px;
+        left: 10%;
+        
+
+      }
+      .coreValues h2{
+        text-transform: capitalize;
+        text-align: center;
+        padding: 10px;
+        color: white;
+        width: 50%;
+        margin: 0px auto;
+        position: relative;
+      }
+      .coreValues h2:before{
+        position: absolute;
+        content: "";
+        width: 20%;
+        border-radius: 20px;
+        background-color: white;
+        height: 5px;
+        bottom: 0px;
+        left: 30%;
+        
+
+      }
+      .section_application{
+        height: 50vh;
+      }
+      .section_application::before{
+        position: absolute;
+        background-color: #000000a3;
+        content: "";
+        width: 100%;
+        height: 100%;
+        left: 0%;
+      }
+      .section_application .content{
+        width: 50%;
+border-radius: 10px;
+        margin: 5% auto;
+        background-color: white;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+      }
+      .section_application .content h2{
+ text-align: center;
+ position: relative;
+ color: rgba(0, 0, 0, 0.668);
+ text-transform: capitalize;
+ padding: 20px;
+      }
+      .section_application .content h2:before{
+        position: absolute;
+        content: "";
+        width: 20%;
+        border-radius: 20px;
+        background-color: tomato;
+        height: 5px;
+        bottom: 10px;
+      
+        left: 50%;
+        transform:translateX(-50%) ;
+        
+
+      }
+      .section_application .content p{
+        text-align: center;
+        width: 80%;
+        padding: 10px;
+        margin: 0% auto;
+      }
+      .section_application .content a{
+    background-color: tomato;
+    text-align: center;
+    width: 18%;
+    display: inline-block;
+    padding:10px ;
+    color: white;
+    border-radius: 10px;
+    text-transform: capitalize;
+    margin: 5px 40%;
+    transition: all 0.5s ease;
+      }
+      .section_application .content a:hover{
+        background-color: white;
+        border:1px solid tomato;
+        color: tomato;
+        text-decoration: none;
+      }
+      .coreValues h2:after{
+        position: absolute;
+        content: "";
+        width: 10%;
+        border-radius: 20px;
+        background-color: white;
+        height: 5px;
+        bottom: 0px;
+        right: 30%;
+        
+
+      }
+      .img-fluid{
+        border: 6px solid rgb(232, 161, 29);
+      }
+      
+ </style>
+      
+      
+      
+      </head>
+<body>
+  <div class="whatsapp_button" style="position: fixed; z-index: 1000000000000000; bottom: 30px; right: 20px; font-size: 30px;">
+    <a href="https://api.whatsapp.com/send?phone=08035114964" style="color:rgba(0, 128, 0, 0.665);
+           box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);background-color: rgba(255, 255, 255, 0.635);font-weight: 700; border-radius: 50%; padding: 2px 10px;"><span><i class="fa fa-whatsapp"></i></span></a>
+      </div>
+    <nav class="navbar navbar-expand-lg navbar-light  justify-content-evenly" style="position: fixed; width: 100%; z-index:100000000000000; top:0px;">
+        <a class="navbar-brand" href="#">
+         <div class="logo"><img src="images/com (4).jpeg">
+          <h4> Christian Montessori <br >NurSery & Primary school</h4>
+        </div> 
+        
+         </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-evenly" id="navbarTogglerDemo01">
+         
+          <ul class="navbar-nav mr-auto mt-2 mt-lg-0 links">
+            <li class="nav-item active">
+              <a class="nav-link active" href="school.htm">Home <span class="sr-only">(current)</span></a>
+            </li>
+          
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+               About us
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="school.htm#ourvision">Our vision and mission</a>
+                <a class="dropdown-item" href="school.htm#ourhistory">Our history</a>
+                <a class="dropdown-item" href="#">core values</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Event</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+             Acedemics
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="#">Enrollment process</a>
+                <a class="dropdown-item" href="#">Aplication form</a>
+                <a class="dropdown-item" href="#">portal</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="javascript:void(0)"  data-toggle="modal" data-target="#modalContactForm">contacts</a>
+            </li>
+             <li class="nav-item">
+              <a class="nav-link" href="#">Gallery</a>
+            </li>
+          </ul>
+     <div class="navbar_icons">
+    <span style="background-color: #5472d2;"><a href="#"><i class="fa fa-facebook"></i></a></span>
+    <span style="background-color: #3caf2d;"><a href="https://api.whatsapp.com/send?phone=08035114964"><i class="fa fa-whatsapp"></i></a></span>
+    <span style="background-color: #e52d27;"><a href="#"><i class="fa fa-youtube"></i></a></span>
+     </div>
+        </div>
+      </nav>
+
+      <div class="container-fluid" style="margin-top: 10%;">
+        <div class="menu_svg">
+            <svg id="visual" viewBox="0 0 900 600" width="100%" height="600" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"><rect x="0" y="0" width="900" height="600" fill="#ffffff"></rect><g fill="#fcb13d">
+              <circle r="32" cx="859" cy="142" fill="#d45252"></circle><circle r="13" cx="22" cy="536" fill="#ec732f">
+              </circle><circle r="23" cx="372" cy="555"  fill="#ed4883"></circle><circle r="35" cx="755" cy="300" fill="#ec7330">
+          
+              </circle><circle r="34" cx="235" cy="431" fill="#882fb1"></circle><circle r="29" cx="81" cy="52" fill="#ed4883">
+          
+              </circle><circle r="23" cx="372" cy="555"  fill="#ed4883"></circle><circle r="35" cx="755" cy="300" fill="#ec7330">
+              </circle><circle r="23" cx="372" cy="555"  fill="#ed4883"></circle><circle r="35" cx="755" cy="300" fill="#ec7330">
+          
+              </circle><circle r="30" cx="280" cy="133"></circle><circle r="20" cx="25" cy="149" fill="#a767c5">
+              </circle><circle r="23" cx="372" cy="555"  fill="#ed4883"></circle><circle r="35" cx="755" cy="300" fill="#ec7330">
+          
+              </circle></g></svg>
+          </div>
+        <div class="container-xxl py-5">
+            <div class="container">
+                <div class="row g-5 align-items-center">
+                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInUp;">
+                        <h1 class="mb-4 text-center">Legacy Unveiled: Tracing the Remarkable History of christian Montessori school</h1>
+                        <p class="text-center">A tale of excellence, resilience, and unwavering commitment to holistic education. From humble beginnings to our current stature, each chapter is a testament to our dedication to shaping well-rounded individuals. Join us in celebrating a history defined by achievements, innovation, and a relentless pursuit of educational distinction.</p>
+                        <div class="row g-4 align-items-center">
+                            <div class="col-sm-6">
+                                <span><img src="images/curved-arrow (1).png" alt="" style="width: 50%;"></span>
+                            </div>
+                         
+                        </div>
+                    </div>
+                    <div class="col-lg-6 about-img wow fadeInUp" data-wow-delay="0.5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInUp;">
+                        <div class="row">
+                            <div class="col-12 text-center">
+                                <img class="img-fluid w-75 rounded-circle bg-light p-3" src="images/com (2).jpeg" alt="">
+                            </div>
+                            <div class="col-6 text-start" style="margin-top: -150px; width: 100%;">
+                                <img class="img-fluid w-140 rounded-circle bg-light p-3" src="images/com (5).jpeg" alt="">
+                            </div>
+                            <div class="col-6 text-end" style="margin-top: -150px;">
+                                <img class="img-fluid w-100 rounded-circle bg-light p-3" src="images/ren.jpeg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+
+      <div class="container-fluid coreValues" style=" background:#ec7330;
+      ;">
+        <h2> ours core value</h2>
+        <div class="row ">
+          <div class="col-md-3 row_items">
+            <h3>Discipline</h3>
+            <p>
+Recognizing our duty to instill discipline, we go beyond academics. Our focus on moral values and life skills has established us as a beacon of excellence. We are proud to be synonymous with a holistic education that molds students into well-rounded individuals, ready to face the challenges of tomorrow.</p>
+          </div>
+          <div class="col-md-3 row_items">
+            <h3>Honesty</h3>
+            <p>
+              In our school,We believe in uprightness, fairness, sincerity, and truthfulness.
+               We are always ready to defend our values and what we represent.
+               honesty is more than a policy; it's a value we cultivate. In our vibrant learning community, we inspire a culture of integrity,
+                fostering an environment where students thrive academically and personally
+              </p>
+          </div>
+          <div class="col-md-3 row_items">
+            <h3>God fearing</h3>
+            <p>At Christian Montessori School, our commitment is deeply rooted in
+               the guidance of God. We strive to instill values that go beyond academics, fostering a holistic education where each child not only learns but also grows in the light of Christian principles. In this nurturing environment, we believe that a
+               strong foundation in faith enriches the educational journey for every student.</p>
+          </div>
+        </div>
+        <div class="row mt-5 pb-5">
+          <div class="col-md-3 row_items">
+            <h3>Obedience</h3>
+            <p> We impart essential lessons on obedience, educating children on the rewards of respecting parents, educators, leaders, the government, and other influential figures. Our commitment to instilling these values ensures that our students not only excel academically but also grow into responsible 
+              and respectful individuals who contribute positively to society</p>
+          </div>
+          <div class="col-md-3 row_items">
+            <h3>Creativity</h3>
+            <p>
+Christian Montessori School nurtures creativity in a supportive environment, blending Christian values and Montessori principles. Our approach emphasizes personalized learning, hands-on experiences, and 
+encourages exploration, questioning, and creative self-expression for each child.</p>
+          </div>
+          <div class="col-md-3 row_items">
+            <h3>Love</h3>
+            <p>As a top-notch school, our foundation is built on the profound principle of love. Rooted in Christian values, we prioritize creating an environment where love is not just a concept but a lived reality. This commitment extends to every child, fostering empathy, kindness, and an appreciation for individual uniqueness. In this atmosphere of love, 
+              we believe each child can thrive academically, socially, and spiritually.</p>
+          </div>
+        </div>
+      </div>
+<div class="section_application container-fluid" style="background-image: url('images/com.jpeg'); background-size: cover; background-position:center; background-attachment: fixed; position: relative;">
+<div class="row">
+  <div class="col-md-12">
+    <div class="content">
+      <h2>Apply for Admission</h2>
+      <p> Secure your child's future with us – apply 
+        for admission today and embark on a journey of academic excellence and personal growth!
+
+
+
+
+
+</p>
+         <a href="#">apply now &RightArrow;</a>
+    </div>
+  </div>
+</div>
+</div>
+<footer class="footer-section container-fluid">
+  <div class="container-fluid" >
+      <div class="footer-cta pt-5 pb-5">
+          <div class="row">
+              <div class="col-xl-4 col-md-4 mb-30">
+                  <div class="single-cta">
+                      <i class="fa fa-map-marker"></i>
+                      <div class="cta-text">
+                          <h4>Find us</h4>
+                          <span>24 Nepa Line, Uyo-Akwa ibom state</span>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-xl-4 col-md-4 mb-30">
+                  <div class="single-cta">
+                      <i class="fa fa-phone"></i>
+                      <div class="cta-text">
+                          <h4>Call us</h4>
+                          <span>(+234) 8033107491</span>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-xl-4 col-md-4 mb-30">
+                  <div class="single-cta">
+                      <i class="fa fa-envelope-open"></i>
+                      <div class="cta-text">
+                          <h4>Mail us</h4>
+                          <span>aiqoro@yahoo.com</span>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="footer-content pt-5 pb-5">
+          <div class="row">
+              <div class="col-xl-4 col-lg-4 mb-50">
+                  <div class="footer-widget">
+                      <div class="footer-logo">
+                          <a href="index.html"><img src="images/com (4).jpeg" class="img-fluid" alt="logo" style="border-radius: 20px;"></a>
+                      </div>
+                      <div class="footer-text">
+                          <p>At christian Montessori, we ignites minds and nurture potentials. Our commitment to excellence and passion for learning shape future leaders. Join us for an education that empowers.</p>
+                      </div>
+                      <div class="footer-social-icon">
+                          <span>Connect with us</span>
+                          <a href="#"><i class="fa fa-facebook-f facebook-bg"></i></a>
+                          <a href="#"><i class="fa fa-twitter twitter-bg"></i></a>
+                          <a href="#"><i class="fa fa-whatsapp google-bg"></i></a>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
+                  <div class="footer-widget">
+                      <div class="footer-widget-heading">
+                          <h3>Useful Links</h3>
+                      </div>
+                      <ul style="flex-direction: column;">
+                          <li><a href="#">Home</a></li>
+                          <li><a href="#">about</a></li>
+                          <li><a href="#">events</a></li>
+                           <li><a href="#">gallery</a></li>
+                         
+                         
+                      </ul>
+                  </div>
+              </div>
+              <div class="col-xl-4 col-lg-4 col-md-6 mb-50">
+                  <div class="footer-widget">
+                      <div class="footer-widget-heading">
+                          <h3>Subscribe</h3>
+                      </div>
+                      <div class="footer-text mb-25">
+                          <p>Don’t miss to subscribe to our new feeds, kindly fill the form below.</p>
+                      </div>
+                      <div class="subscribe-form">
+                          <form action="#">
+                              <input type="text" placeholder="Email Address">
+                              <button><i class="fa fa-envelope-open"></i></button>
+                          </form>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+  <div class="copyright-area">
+      <div class="container">
+          <div class="row">
+              <div class="col-xl-6 col-lg-6 text-center text-lg-left">
+                  <div class="copyright-text">
+                      <p>Copyright &copy; 2024, All Right Reserved <a href="#">multicore ict solution</a></p>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</footer>
+<div class="modal fade" id="modalContactForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+aria-hidden="true" style="margin-top:5%;">
+<div class="modal-dialog" role="document"  >
+<div class="modal-content" >
+<div class="modal-header">
+   
+      <button type="button" class="close" data-dismiss="modal">&times;</button>
+    </div>
+    <div class="col-12">
+      <div class="mona-contact-form mb-80">
+        <div class="contact-heading">
+          <h4>Contact Us</h4>
+          <p style="font-size: 15px;">Lorem ipsum dolor sit amet, consetetur sadipscing esed diam nonumy eirmod tempor invidunt ut labore et dolore magna.</p>
+        </div>
+
+        <form action="#" method="post">
+          <div class="form-group">
+            <label for="fullName">Name:</label>
+            <input type="text" class="form-control" name="full-name" id="fullName">
+          </div>
+          <div class="form-group">
+            <label for="emailId">Email or Phone number: </label>
+            <input type="email" class="form-control" name="email" id="emailId">
+          </div>
+          <div class="form-group">
+            <label for="resume">Resume:</label>
+            <textarea class="form-control" name="message" rows="3" cols="80" id="resume"></textarea>
+          </div>
+          <button class="btn mona-btn btn-2 mt-15">Contact Us</button>
+        </form>
+      </div>
+    </div>
+   <div class="modal-footer">
+      <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+    </div>
+</div>
+</div>
+</div>
+
+</body>
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script> 
+  <script src="owlcarousel/owl.carousel.min.js"></script>
+<script>
+    $(document).ready(function () {
+      $(window).scroll(function () {
+        $('.section.animated').each(function () {
+          var position = $(this).offset().top;
+          var scroll = $(window).scrollTop();
+          if (position < scroll + $(window).height() * 0.85) {
+            $(this).addClass('fadeInUp');
+          }
+        });
+      });
+    });
+</script>
+<script src="scrolltop.js"></script>
+
+</html>

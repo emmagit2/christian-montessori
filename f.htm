@@ -1,0 +1,36 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    .oval-container {
+      width: 200px; /* Set the width of your oval container */
+      height: 30vh;
+      border-radius: 20px 50px 40px 80px ; /* Set the height of your oval container */
+    /* Make it a circle, adjust border-radius to get an oval shape */
+      overflow: hidden; /* Hide the parts of the image that go beyond the oval shape */
+      position: relative;
+    }
+
+    .oval-container img {
+      width: 100%; /* Make the image fill the oval container */
+      height: 100%; /* Make the image fill the oval container */
+      object-fit: cover; /* Ensure the image covers the entire container */
+      /* border-radius: 50%; Match the border-radius of the container to maintain oval shape */
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="oval-container">
+    <img src="a black school  038e5244-1b60-44db-9910-f3a091e36261.png" alt="Your Image Description">
+  </div>
+
+</body>
+</html>
