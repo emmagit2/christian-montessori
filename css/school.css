@@ -233,6 +233,18 @@ background-color: white;
   font-size: 14px;
   color: #878787;
 }
+.mona-btn{
+  background-color: tomato;
+  text-align:center;
+  padding: 10px;
+  color: white;
+  display: block;
+    margin: 10px auto;
+
+}
+.mona-btn i{
+  margin: 2px;
+}
 .copyright-text p a{
   color: #ff5e14;
 }
@@ -294,8 +306,12 @@ animation: pulse-border 1500ms ease-out infinite;
 }
 .mona-contact-form .contact-heading {
     margin-bottom: 20px;
+    text-align: center;
+    
 }
-
+#modalContactForm{
+  margin-top: 4%;
+}
 .play:after {
 content: "";
 position: absolute;
@@ -416,6 +432,9 @@ left: 2px;
 .main {
   margin: 0 auto;
 }
+.drop{
+  margin-top:10%;
+ }
 .main .cards {
   display: flex;
   flex-wrap: wrap;
@@ -802,20 +821,40 @@ width: 100%;
     width: 80px;
     
   }
+  .drop{
+    margin-top: 30%;
+  }
 
   .links{
-margin-left: 40%;
+margin-left: 13%;
+padding: 5rem 0px;
+
+}
+.drop{
+ margin-top:30%;
+}
+#modalContactForm{
+  margin-top: 33%;
+}
+.section_application .content  {
+width: 100% !important;
+}
+.section_application .content a{
+  width: 32% !important;
+  margin: 5px 33% !important;
 }
 .logo h4{
-  font-size: 10px;
+  font-size: 20px;
   text-align: left;
+  padding: 10px;
+  border-radius:0px 0px 0px 20px;
 }
 .main .card_title{
       font-size: 60px;
           margin-top: -32%;
 }
 .navbar-nav .dropdown-menu{
-  margin: 0px -2rem;
+  margin: 0px 2rem;
   width: 80%;
 }
 .main .card_text{
