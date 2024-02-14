@@ -36,6 +36,15 @@ width: 25%;
   .form-floating {
     position: relative;
 }
+.edited{
+  position: absolute;
+  background-color: white;
+  border-left: 3px solid tomato;
+  width: 80%;
+  top: 10%;
+  left: 20%;
+  border-radius: 10% 0px  0px 10%;
+}
   .form-floating>label {
     position: absolute;
     top: 0;
@@ -791,7 +800,7 @@ margin: 0px 3px;
 @media screen and (max-width:569px){
   .menu_text{
     width: 100%;
-    margin-top: 10%;
+    margin-top: 18%;
   }
   .navbar{
     padding: 30px 0px;
@@ -849,7 +858,7 @@ width: 100% !important;
   margin: 5px 33% !important;
 }
 .logo h4{
-  font-size: 20px;
+  font-size: 19px;
   text-align: left;
   padding: 10px;
   border-radius:0px 0px 0px 20px;
