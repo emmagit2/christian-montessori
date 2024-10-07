@@ -1,0 +1,1962 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Christian - Montessori</title>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous"> -->
+  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+ <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet"> 
+  <!-- FontAwesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+   <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+<link rel="stylesheet" href="css/school.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+<link
+rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+/>
+<style>
+  .navbar{
+    background-color: white !important;
+    z-index: 100000;
+  }
+  .sch{
+    color:#ff6347;
+  }
+  .navbar a{
+    font-size: 18px;
+    color: rgba(0, 0, 0, 0.867) !important;
+    font-family: poppins;
+    transition: all 0.9s ease;
+    margin: 0px 6px;
+  }
+  .navbar li{
+    position: relative;
+  }
+  .navbar li:before{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    background: red;
+    width: 100%;
+    height: 100%;
+    margin: 2px 6px;
+    width: 0;
+
+  }
+  .udosen_text{
+background-color: white;
+ width: 60%; margin: 0px auto;
+ border-radius: 30px; 
+ color: rgb(247, 69, 38)
+  }
+  .benefits-list {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    .benefits-list li {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+      background-color: #fafafa;
+      padding: 15px;
+      border-radius: 6px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      transition: background-color 0.3s ease;
+    }
+
+    .benefits-list li:hover {
+      background-color: #f0f0f0;
+    }
+
+    .benefits-list li::before {
+      content: "\2713"; /* Check mark symbol */
+      color: tomato;
+      font-size: 1.5em;
+      font-weight: bold;
+      display: inline-block;
+      margin-right: 15px;
+    }
+
+    .benefits-list li strong {
+      color: #555;
+      font-size: 18px;
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    .benefits-list li span {
+      color: #666;
+      font-size: 16px;
+      line-height: 1.6;
+    }
+
+  .navbar .nav-link:hover{
+    background-color: tomato;
+    color: white !important;
+    border-radius: 20px;
+  }
+  .crs-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    position: relative;
+    z-index: 100000;
+    padding: 20px;
+    background-color: #ffffff;
+}
+
+.crs-card {
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+.gallery-text{
+  padding: 30px;
+    text-align: center;
+    font-size: 30px;
+    font-family: Butler;
+    font-weight: 600;
+}
+
+.crs-card:hover {
+    transform: scale(1.05);
+}
+
+.crs-icon {
+    font-size: 50px;
+    margin-bottom: 15px;
+    color: #ff7043; /* Orange accent for icons */
+}
+
+.crs-content h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #333;
+}
+/* Container for each class section */
+.description_section {
+position: relative;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  overflow: hidden;
+  position: relative;
+}
+.overlay_description{
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 70%;
+  top: 0%;
+  left: 0%;
+}
+.map-container{
+  position: relative;
+height: 70vh;
+}
+.testimony-section {
+height:auto;
+    color: #000000;
+    padding: 0.5em 0;
+}
+.testimony-section h2{
+  padding: 10px;
+  font-family: poppins;
+  color: #000000e4;
+  
+}
+.slick-dots{
+  bottom: 30%;
+}
+
+.testimony-slider {
+    width: 100%;
+    max-width: 500px;
+    margin: auto;
+   position: relative;
+}
+
+.containere{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	overflow: hidden;
+}
+
+.testimonial {
+	width: 500px;
+	max-width: 100%;
+	background: rgb(246, 57, 24);
+	padding: 4em 3em;
+  color: white;
+  font-family: poppins;
+	display: flex;
+	align-items: flex-end;
+	position: relative;
+	box-shadow: 0 2px 2px hsl(0deg 0% 0%/.075), 0 3px 3px hsl(0deg 0% 0%/.075), 0 5px 5px hsl(0deg 0% 0%/.075), 0 9px 9px hsl(0deg 0% 0%/.075), 0 17px 17px hsl(0deg 0% 0%/.075);
+	position: relative;
+	&:after {
+		content: "";
+		border: 8px solid rgb(0, 0, 0);
+		border-radius: 50px;
+		width: 85%;
+		height: 120%;
+		position: absolute;
+		z-index: -1;
+		left: 1.5em;
+		top: -1.7em;
+	}
+	&:before {
+		content: "";
+		position: absolute;
+		bottom: -6.2em;
+		left: 5em;
+		z-index: 1;		
+		width: 0;
+		height: 0;
+		border-style: solid;
+		border-width: 70px 100px 0 0;
+		border-color: rgb(0, 0, 0) transparent transparent transparent;
+	}
+
+
+
+	.quote {
+		position: absolute;
+		font-size: 3em;
+		width: 40px;
+		height: 40px;
+		background: rgb(0, 0, 0);
+		color: #fff;
+		text-align: center;
+		line-height: 1.25;
+		&.open {
+			top: 0;
+			left: 0;
+		}
+		&.close {
+			bottom: 0;
+			right: 0;
+		}
+	}
+	p {
+		width: 60%;
+		display: inline-block;
+		font-size: 1.2em;
+	}
+	.source {
+		width: 40%;
+		height: 100%;
+		position: relative;		
+		span {			
+			display: inline-block;
+			font-size: 1.1em;
+			position: relative;
+			margin-left: 1rem;
+			text-align: right;			
+			&:before {
+				content: "\2014";
+				display: inline;
+				margin-right: 5px;
+			}
+		}		
+	}
+	.image {
+		transform: rotate(-5deg);
+		position: absolute;
+		top: 0.5em;
+		right: 1.5em;
+		img {
+			border: 10px solid #fff;
+			margin: 0;
+			padding: 0;
+		}
+		.clip {
+			border: 2px solid #222;
+			border-right: none;
+			height: 75px;
+			width: 20px;
+			position: absolute;
+			right: 30%;
+			top: -15%;
+			border-radius: 25px;
+			&:before {
+				content: "";
+				position: absolute;
+				top: -1px;
+				right: 0;
+				height: 10px;
+				width: 16px;
+				border: 2px solid #222;
+				border-bottom: none;
+				border-top-left-radius: 25px;
+				border-top-right-radius: 25px;
+				z-index: 99;					
+			}
+			&:after {
+				content: "";
+				position: absolute;
+				bottom: -1px;
+				right: 0;
+				height: 40px;
+				width: 16px;
+				border: 2px solid #222;
+				border-top: none;
+				border-bottom-left-radius: 25px;
+				border-bottom-right-radius: 25px;
+				z-index: 99;
+			}
+		}
+	}
+}
+* Title Styling */
+.title-section {
+  text-align: center;
+}
+.title {
+  font-size: 36px;
+  color: #ffffff;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  animation: fadeInDown 1s ease;
+  position: relative;
+}
+
+.animated-title:after {
+  content: '';
+  display: block;
+  width: 100px;
+  border-radius: 10px;
+  height: 5px;
+  background-color: tomato;
+  margin: 15px auto 0;
+  animation: slideIn 1s ease-in-out;
+}
+
+.subtitle {
+  font-size: 18px;
+  color: #ffffff;
+  margin-top: 10px;
+  position: relative;
+  z-index: 10000;
+
+}
+/* Animations */
+
+
+@keyframes slideIn {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100px;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .class-card {
+    margin-bottom: 20px;
+  }
+}
+/* Card Styling */
+.class-card {
+  background-color: #fff; /* White background for the card */
+  border-radius: 15px;
+  border: 3px solid tomato; /* Tomato-colored border */
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1); /* Box shadow for depth */
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  overflow: hidden;
+  position: relative;
+  
+}
+
+.class-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.2); /* Hover shadow */
+}
+
+/* Icon styles */
+.icon-container {
+  background-color: tomato; /* Tomato color for circular background */
+  padding: 25px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.icon {
+  font-size: 40px;
+  color: white;
+}
+.text-container{
+  width: 60%;
+  overflow-x: auto;
+  height: 60vh;
+}
+.embedded-container {
+            width: 100%; /* Full width */
+            height: 600px; /* Set height as needed */
+            border: none; /* No border */
+            overflow-y: none;
+        }
+
+/* Heading */
+.class-card h3 {
+  font-size: 24px;
+  margin-top: 15px;
+  color: #333;
+}
+
+/* Text styling */
+.class-card p {
+  font-size: 16px;
+  color: #666;
+}
+
+/* Hover Icon Rotation */
+.animated-icon:hover .icon {
+  transform: rotate(360deg); /* Rotating animation for icons */
+  transition: transform 0.4s ease-in-out;
+}
+
+/* Animations */
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideIn {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100px;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .class-card {
+    margin-bottom: 20px;
+  }
+}
+
+
+.crs-content p {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+    .crs-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+     .navbar-nav {
+            flex-direction: row;
+        }
+        .nav-link {
+            padding-right: 15px;
+            transition: color 0.3s ease;
+        }
+        .nav-link:hover {
+            color: #007bff;
+        }
+        .dropdown-menu {
+            transition: all 0.3s ease;
+            margin-top: 1.9rem;
+        }
+        .dropdown-menu a{
+          margin: 0px !important;
+       text-align: center;
+          width: 100%;
+          
+     
+        }
+        .dropdown-menu a:hover{
+          border-bottom: 1px solid #f05f1b;
+          background-color: #ee733c;
+          color: white;
+        }
+        .social-icons {
+            display: flex;
+            align-items: center;
+        }
+        .social-icons a {
+       
+          padding: 15px 4px;
+          margin: 2px 3px;
+          border-radius: 50% ;
+    
+            padding: 0 7px;
+            transition: color 0.3s ease;
+        }
+        .social-icons a i{
+          color: #fff;
+          border-radius: 50%;
+          padding: 10px 12px;
+        }
+        .social-icons a:hover {
+            color: #007bff;
+        }
+        .navbar-toggler-icon {
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000000' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba(0, 0, 0, 0.5)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+        }
+
+        @keyframes fadeInUp {
+            from {
+                transform: translateY(20px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+        .header-container {
+    padding: 50px;
+    background-color:  #ffff0030;
+    display: flex;
+    margin-top: 5%;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  /* Left Side: Text and Button */
+  .text-side {
+    padding: 20px;
+    position: relative;
+  }
+
+  .school-name {
+    color: #ff6b6b; /* Custom color for school name */
+  }
+
+  .description {
+    font-size: 18px;
+    margin: 20px 0;
+    line-height: 1.5;
+  }
+
+  /* Animated Button */
+  .button-container {
+    margin-top: 20px;
+  }
+
+  .animated-button {
+    position: relative;
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 18px;
+    color: #fff;
+    background-color: #ff6b6b;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    overflow: hidden;
+    transition: all 0.4s ease;
+  }
+
+  .animated-button span {
+    position: relative;
+    z-index: 2;
+  }
+
+  .animated-button::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300%;
+    height: 300%;
+    background-color: #ff4b4b;
+    transition: all 0.4s ease;
+    border-radius: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    z-index: 1;
+  }
+
+  .animated-button:hover::before {
+    transform: translate(-50%, -50%) scale(1);
+  }
+
+  /* Right Side: Slide-in Image and Info Card */
+  .image-side {
+    position: relative;
+    padding: 20px;
+  }
+
+  .image-wrapper {
+    position: relative;
+    opacity: 0;
+    transform: translateX(100px); /* Initial position off-screen */
+    transition: transform 0.8s ease, opacity 0.8s ease;
+  }
+
+  .image-wrapper.slide-in {
+    opacity: 1;
+    transform: translateX(0); /* Slide into view */
+  }
+
+  .school-image {
+    width: 90%;
+    height: 80vh;
+    border-radius: 30px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  }
+
+  .info-card {
+    position: absolute;
+    bottom: 5px;
+    left: -10%;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    width: 80%;
+    text-align: center;
+  }
+
+  .info-card h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+  }
+
+  .info-card p {
+    font-size: 16px;
+    margin-bottom: 15px;
+  }
+
+  .learn-more-link {
+    display: inline-block;
+    color: #ff6b6b;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  .learn-more-link:hover {
+    color: #ff4b4b;
+  }
+
+  /* Animated Icons */
+  .animated-icons {
+    margin-top: 30px;
+ 
+  }
+  .animated-icons i{
+    position: absolute;
+  }
+
+  .animated-icons .icon {
+    font-size: 40px;
+    margin-right: 15px;
+    color: #ff6b6b;
+    top: 10%;
+    animation: float 2s infinite;
+  }
+
+  .animated-icons .book {
+  right: 0%;
+    animation-delay: 0s;
+  }
+
+  .animated-icons .puzzle {
+    top: 50%;
+    left: -10%;
+    animation-delay: 0.3s;
+  }
+
+  .cap {
+    animation-delay: 0.6s;
+  }
+
+  .brain {
+    animation-delay: 0.9s;
+  }
+
+  @keyframes float {
+    0% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+    100% {
+      transform: translateY(0px);
+    }
+  }
+
+  /* Media Queries for Responsive Design */
+  @media (max-width: 768px) {
+    .header-container {
+      flex-direction: column;
+      text-align: center;
+    }
+
+    .text-side {
+      margin-bottom: 30px;
+    }
+
+    .info-card {
+      width: 90%;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+
+
+.navbar-brand{
+  width: 20% !important;
+  display: inline-block;
+}
+.navbar-brand img {
+ 
+width: 30%;
+
+}
+.icon_prev{
+  background-color: rgb(255, 254, 255);
+  padding: 10px 16px;
+  color: purple;
+  border-radius: 50px;
+}
+.overlay_side{
+  position: absolute;
+
+  border-width: 20px;
+  border-color: transparent #ee733c #ee733c transparent;
+  border-style: solid;
+}
+.overlay_side2{
+  border: none;
+  width: 30%;
+left: 20%;
+}
+.overlay_side2 img{
+  width: 40%;
+}
+
+  
+        .contact-card {
+            position: absolute; /* Change to relative */
+            background-color: white;
+            padding: 20px;
+            top:0%;
+            width: 30%;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+            margin-bottom: 20px; /* Space below the card */
+        }
+.carousel-item{
+  position: relative;
+}
+/* .carousel-item:after{
+content: " ";
+z-index: 1000;
+background-color: rgba(152, 89, 152, 0.494);
+position: absolute;
+width: 100%;
+height: 100%;
+border-radius: 30% 70%;
+top: 0%;
+left: 0%
+} */
+.hero_btn-continer{
+  width: 50%;
+  margin: 0px auto;
+}
+.impo1{
+margin: 0px 20px;
+padding: 20px
+}
+.bgty{
+  display: flex;
+  justify-content: center;
+  height: 30vh !important;
+  background-image: url('images/geometry-bg.jpg');
+ position: relative;
+ align-items: center;
+ z-index:20000000000;
+}
+.gallery-text:before {
+    display: none;
+  }
+  .udosen_text{
+    padding: 6px 10px;
+  }
+.bgty::before{
+  background-color: #ff63478c;
+  height: 100%;
+  position: absolute;
+  content: "";
+  top: 0%;
+  left: 0%;
+  width: 100%;
+}
+.bgty .card{
+  background-color: white !important;
+  height: 30vh;
+  width: 90% !important;
+}
+.carousel-control-prev, .carousel-control-next{
+  z-index: 10000000000;
+}
+.hero_btn-continer a{
+  text-align: center;
+  display: block;
+  background-color: white;
+  color: #ff6347;
+  width: 50%;
+  margin: 0px auto;
+  padding: 10px;
+  text-decoration: none;
+  border-radius: 30px;
+  border: 1px solid #ff6347;
+  transition: all 0.4s ease;
+}
+.hero_btn-continer a:hover{
+  background-color: tomato;
+  color: white;
+}
+.carousel-item img{
+  border-radius: 20%;
+}
+.carousel-item img {
+    border-radius: 43% 59%;
+}
+.carousel_sub_item{
+width: 50%;
+top:10%;
+left: 30%
+}
+.carousel_sub_item img{
+  width: 100%;
+  border: 10px solid white;
+  height: 300px;
+  transform: rotate(-30deg);
+  border-radius: 10px;
+}
+.carousel_text{
+position: absolute;
+top: 0%;
+}
+/* Mobile Menu Toggle */
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.menu-toggle .bar {
+    background-color: #fff;
+    height: 3px;
+    width: 25px;
+    margin: 3px 0;
+}
+.bgty{
+  height: auto;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+
+    .menu-toggle {
+        display: flex;
+    }
+
+    /* Ensure dropdowns work in mobile view */
+    .dropdon-menu {
+        position: relative;
+    }
+
+    .dropdon:hover .dropdon-menu {
+        display: none;
+    }
+
+    .dropdon.active .dropdon-menu {
+        display: block;
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+    }
+}
+/* Masonry Grid */
+.masonry-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Four-column layout */
+    grid-gap: 20px;
+    justify-content: center;
+}
+
+/* Card Style */
+.cardew {
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.cardew i {
+    color: #ff6347; /* Icon color */
+    margin-bottom: 20px;
+}
+
+.cardew h3 {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.cardew p {
+    font-size: 1em;
+    color: #777;
+    margin-bottom: 10px;
+}
+.card-columns{
+  justify-content: justify-content;
+}
+
+.cardew:hover {
+    transform: translateY(-10px);
+}
+@media  screen and (max-width: 600px) {
+  .udosen_text{
+    width: 100%; 
+    padding: 10px;
+  }
+  .description_section .row > div{
+
+    max-width: 100%;
+  }
+  .navbar{
+    padding: 15px !important;
+  }
+  .navbar-brand img {
+       width: 80px;
+    }
+    .text-side{
+width:400px;
+
+
+
+    }
+
+  .school-image{
+    height: 50vh;
+    width: 100%;
+    border-radius: 30px;
+  }
+  .button-container{
+    margin: 0px auto;
+  }
+  .gallery-text{
+    width: 100%;
+  
+  }
+  .containere{
+    min-height: 60vh;
+  }
+  .display3{
+    display: none;
+  }
+  .testimonial::before{
+    bottom: -7.2em;
+  }
+  .gallery-text:before {
+    display: none;
+  }
+  .crs-card{
+    width: 350px;
+  }
+  .impo{
+    width: 100% !important;
+  }
+  .impo1
+  {
+    width: 100%;
+    margin: 0px;
+  }
+  .nav-tabs{
+    width: 100%;
+  }
+  .testimonial &:after{
+   top: -3rem;
+  }
+  .testimony-section{
+    height: auto;
+  }
+  .map-container{
+    display: flex;
+    flex-direction: column;
+  }
+  .contact-card{
+    position: relative;
+    width: 100%;
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .masonry-grid {
+        grid-template-columns: repeat(2, 1fr); /* Two columns on tablets */
+    }
+}
+
+@media (max-width: 768px) {   
+  .text-side{
+    width: 400px;
+  }
+
+  .school-image{
+    height: 50vh;
+  }
+  .crs-card{
+    width: 230px;
+  }
+  .content2 .row{
+    flex-direction: column;
+  }  
+  .content2 .row > div{
+    max-width: 90%;
+    margin: 0px auto;
+  } 
+  .content2 h2 {
+    width: 80%;
+    margin: 0px auto;
+    text-align: center;
+  }
+  .content p{
+    text-align: center;
+    margin: 0px auto;
+    width: 90%;
+}
+.items {
+    margin: 10px auto;
+  }
+  .description_section .row{
+    flex-direction: column;
+  }
+  .description_section .row > div{
+    max-width: 70%;
+    margin: 0px auto;
+    
+  }
+  }
+ 
+    .cardew {
+        padding: 20px;
+    }
+
+   .masonary-grid2{    
+    width:50%;
+          
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+        grid-auto-rows: 25px;
+        gap: 15px;
+   }
+ .about-section{
+ padding: 10px;
+
+ }
+ .about-section {
+    padding: 40px;
+    background-color: tomato;
+    color: white;
+    text-align: left;
+}
+
+.about-section h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.about-section p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+@media (max-width: 320px){
+  .text-side {
+        width: 300px;
+    }
+    .description_section .row > div{
+      max-width: 100%;
+    }
+    .content2 h2{
+      width: 100%;
+    }
+    .items{
+width: 100%;
+    }
+}
+</style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <a class="navbar-brand" href="#">
+      <img src="images/logo.jpeg" alt="Logo">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Home</a>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          About us
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink1">
+            <a class="dropdown-item" href="#ourvision">Our vision</a>
+            <a class="dropdown-item" href="#ourmission">Our mission</a>
+            <a class="dropdown-item" href="#ourhistory">Why christian Montessori</a>
+         
+          </div>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Our Gallery</a>
+          </li>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Academics
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="h.htm">Apply for admission</a>
+            <a class="dropdown-item" href="h.htm#Upcoming">Upcoming Event</a>
+            <a class="dropdown-item" href="Javscript:void(0)">school calender</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Javscript:void(0)">Portal</a>
+        </li>
+      </ul>
+  
+      <div class="social-icons">
+        <a href="#"><i class="fa fa-facebook-f facebook-bg"></i></a>
+        <a href="#"><i class="fa fa-envelope-open fa-envelope-bg"></i></a>
+        <a href="#"><i class="fa fa-whatsapp google-bg"></i></a>
+      </div>
+    </div>
+  </nav>
+ 
+  <div class="header-container">
+    <div class="row">
+      <!-- Left Side: Text, Animated Button, and Icons -->
+      <div class="col-md-6 text-side d-flex flex-column justify-content-center align-items-start">
+        <h1>Welcome to <span class="school-name">Christian Montessori School</span></h1>
+        <p class="description">
+          Our core value is to nurture, inspire, and educate children in a loving Christian environment
+          using Montessori principles to ensure they grow academically, emotionally, and spiritually.
+        </p>
+        <div class="button-container">
+          <button class="animated-button">
+            <span>contact us</span>
+          </button>
+        </div>
+  
+        <!-- Animated Icons Section -->
+        <div class="animated-icons">
+          <i class="fa fa-book icon book"></i>
+          <i class="fa fa-puzzle-piece icon puzzle"></i>
+          <i class="fa fa-graduation-cap icon cap"></i>
+          <i class="fa fa-brain icon brain"></i>
+        </div>
+      </div>
+  
+      <!-- Right Side: Slide-in Image with School Info Card -->
+        <div class="image-wrapper slide-in">
+          <img src="images/description.jpeg" alt="School Image" class="school-image img-fluid animate__animated animate__heartBeat animate__repeat-2">
+          <div class="info-card animate__animated animate__slideInLeft">
+            <h3>Christian Montessori School</h3>
+            <p>
+              We provide a safe, nurturing environment for children, focusing on their academic and
+              spiritual growth through the Montessori method of learning.
+            </p>
+            <a href="#about" class="learn-more-link">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  
+    </section>
+  </section>
+
+
+  <div class="crs-container">
+    <div class="crs-card">
+        <div class="crs-icon">
+            🚌
+        </div>
+        <div class="crs-content">
+            <h3>School Bus</h3>
+            <p>Safe and reliable transportation for all students with multiple routes.</p>
+        </div>
+    </div>
+
+    <div class="crs-card">
+        <div class="crs-icon">
+            👨‍🏫
+        </div>
+        <div class="crs-content">
+            <h3>Qualified Teachers</h3>
+            <p>Experienced and certified educators committed to student success.</p>
+        </div>
+    </div>
+
+    <div class="crs-card">
+        <div class="crs-icon">
+            🏅
+        </div>
+        <div class="crs-content">
+            <h3>Extracurricular Activities</h3>
+            <p>A wide range of sports, arts, and clubs to nurture students' talents.</p>
+        </div>
+    </div>
+
+    <div class="crs-card">
+        <div class="crs-icon">
+            💻
+        </div>
+        <div class="crs-content">
+            <h3>ICT Lab</h3>
+            <p>State-of-the-art computer lab with modern technology for digital learning.</p>
+        </div>
+    </div>
+</div>
+
+  <section class="container-fluid content2" style="height: auto;">
+      <div class="overlay"></div>
+<div class="row">
+  <div class="col-md-5 col-sm-12">
+<h2 class="animate__animated animate__swing">Why our school is the best place for your wards!</h2>
+<p>Why our school is the best place for your wards is not just a claim—it's a commitment. We prioritize a holistic approach to education, fostering a nurturing environment where your children can flourish academically, socially, and personally. Experience the difference as we strive to provide the finest educational journey,
+   making us the best choice for your child's bright future.</p>
+  
+   <div class="items">
+      <div class="svg_items">
+<svg  width="40"  fill="#ff236c" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100;" xml:space="preserve">
+<path style="fill-rule:evenodd; clip-rule:evenodd;" d="M75.5,18.9c2.7-1,5.6,0.4,6.6,3.1c0.6,1.7,0.3,3.5-0.7,4.9  c-0.9,0.2-1.8,0.5-2.6,0.9l1.8,4.9c1.3-0.9,3-1.2,4.6-0.6c2.5,0.9,3.9,3.5,3.2,6.1c-0.4,1.6-1.6,3-3.2,3.6c-1.2,0.4-2.9,0.4-4.2,0  c-2.1-0.8-3.4-2.7-3.4-4.8h-5.1c0,2.2-1.3,4.1-3.4,4.8C68.4,41.9,67.7,42,67,42v5.1c1.3,0,2.6-0.2,3.9-0.6c1.7-0.6,3.1-1.6,4.2-2.9  c1.1,1.2,2.5,2.2,4.2,2.9c1.3,0.5,2.6,0.7,3.9,0.6c1.3,0,2.6-0.2,3.8-0.6c1.1-0.4,2-0.9,2.9-1.6c2,0.1,3.8,1.4,4.6,3.4  c1,2.7-0.4,5.6-3.1,6.6c-0.5,0.2-1,0.3-1.5,0.3c-0.8-0.7-1.8-1.2-2.9-1.6c-2.4-0.9-4.8-0.8-7,0c-0.8,2.3-3.2,3.7-5.6,3.3V62  c3.4,0.3,6.8-1.2,8.9-4c0.6,0,1.3,0.1,2,0.3c2.7,1,4,3.9,3.1,6.6c-0.7,2-2.6,3.3-4.6,3.4c-0.5-0.4-1.1-0.8-1.7-1.1L81.7,68l-1.5,4.1  c0.9,0.6,1.6,1.4,1.9,2.5c1,2.7-0.4,5.6-3.1,6.6c-2.6,1-5.5-0.4-6.5-3c-1.6-4.4-5.8-7.2-10.5-6.8v5.2c3.1-0.5,5.9,2,5.9,5.1  c0,2.8-2.3,5.1-5.1,5.1c-2.8,0-5.1-2.3-5.1-5.1v-8.9V27.3v-8.9c0-2.8,2.3-5.1,5.1-5.1c2.5,0,4.6,1.8,5,4.2c-2.6,1-4.8,3.2-5.8,6  l4.8,1.8c0.9-2.3,3.2-3.7,5.6-3.3C73,20.5,74.1,19.4,75.5,18.9L75.5,18.9z M24.5,81.1c-2.7,1-5.6-0.4-6.6-3.1  c-0.6-1.7-0.3-3.5,0.7-4.8c0.9-0.2,1.8-0.5,2.6-0.9l-1.8-4.9c-1.3,0.9-3,1.2-4.6,0.6c-2.5-0.9-3.9-3.5-3.2-6.1  c0.4-1.6,1.6-3,3.2-3.6c1.2-0.5,2.9-0.5,4.2,0c2.1,0.8,3.4,2.7,3.4,4.8h5.1c0-2.2,1.3-4.1,3.4-4.8c0.7-0.3,1.4-0.3,2.1-0.3v-5.1  c-1.3,0-2.6,0.1-3.8,0.6c-1.7,0.6-3.1,1.6-4.2,2.9c-1.1-1.2-2.5-2.2-4.2-2.9c-1.3-0.5-2.6-0.7-3.9-0.6c-1.3,0-2.6,0.1-3.9,0.6  c-1.1,0.4-2,0.9-2.9,1.6c-2-0.1-3.8-1.4-4.6-3.4c-1-2.7,0.4-5.6,3.1-6.6c0.5-0.2,1-0.3,1.5-0.3c0.8,0.7,1.8,1.2,2.9,1.6  c2.4,0.9,4.8,0.8,7,0c0.9-2.3,3.2-3.7,5.6-3.3V38c-3.4-0.3-6.8,1.2-8.9,4c-0.7,0-1.3-0.1-2-0.3c-2.7-1-4-3.9-3.1-6.6  c0.7-2,2.6-3.3,4.6-3.4c0.5,0.4,1.1,0.8,1.7,1.1l0.3-0.8l1.5-4.1c-0.9-0.6-1.5-1.4-1.9-2.5c-1-2.7,0.4-5.6,3.1-6.6  c2.6-1,5.5,0.4,6.5,3C29,26.2,33.3,29,38,28.7v-5.2c-3.1,0.5-5.9-2-5.9-5.1c0-2.8,2.3-5.1,5.1-5.1c2.8,0,5.1,2.3,5.1,5.1v8.9v45.4  v8.9c0,2.8-2.3,5.1-5.1,5.1c-2.5,0-4.6-1.8-5-4.2c2.6-1.1,4.8-3.2,5.8-6l-4.8-1.8c-0.8,2.3-3.2,3.7-5.6,3.3  C27,79.5,25.9,80.6,24.5,81.1L24.5,81.1z M6.9,59.6c-2.8-1-5.1-3.2-6.1-6.1c-1.9-5.3,0.8-11.2,6.1-13.2l0,0c-0.8-2.2-0.9-4.7,0-7  c1.1-3,3.4-5.1,6.1-6.1v0C11.1,21.9,13.9,16,19.2,14c2.9-1.1,5.9-0.7,8.4,0.6c1.5-3.8,5.2-6.5,9.6-6.5c5.7,0,10.3,4.6,10.3,10.3  v63.2c0,5.7-4.6,10.3-10.3,10.3c-4.3,0-8.1-2.7-9.6-6.5c-0.4,0.2-0.9,0.5-1.4,0.6c-5.3,1.9-11.2-0.8-13.2-6.1c-0.9-2.4-0.8-4.8,0-7  l0,0c-3.9-1.4-6.4-5-6.7-8.8C6.2,62.7,6.3,60.8,6.9,59.6L6.9,59.6z M93.1,40.4c2.8,1,5.1,3.2,6.1,6.1c1.9,5.3-0.8,11.2-6.1,13.2l0,0  c0.8,2.2,0.9,4.7,0,7c-1.1,3-3.4,5.1-6.1,6.1v0c1.9,5.3-0.8,11.2-6.1,13.2c-2.9,1-5.9,0.7-8.4-0.6c-1.5,3.8-5.2,6.5-9.6,6.5  c-5.7,0-10.3-4.6-10.3-10.3V18.4c0-5.7,4.6-10.3,10.3-10.3c4.3,0,8.1,2.7,9.6,6.5c0.4-0.2,0.9-0.4,1.4-0.6  c5.3-1.9,11.2,0.8,13.2,6.1c0.9,2.4,0.8,4.8,0,7l0,0c3.9,1.4,6.4,5,6.7,8.8C93.8,37.3,93.7,39.2,93.1,40.4L93.1,40.4z"></path>
+</svg>
+      </div>
+      <div class="texd">
+        <h3>well trained professional </h3>
+      </div>
+    </div>
+       <div class="items">
+      <div class="svg_items">
+<svg width="40" fill="#0b7b89" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100;" xml:space="preserve">
+<path style="fill-rule:evenodd; clip-rule:evenodd;" d="M5.4,26.4H50h44.6L50,5.4L5.4,26.4L5.4,26.4z M0.1,89.4h99.7  v5.3H0.1V89.4L0.1,89.4z M73.6,47.4h5.3v-5.3h-5.3V31.6h5.3h5.3v31.5h-5.3v-5.3h-5.3V47.4L73.6,47.4z M57.9,47.4h5.3v-5.3h-5.3V31.6  h5.3h5.2v31.5h-5.2v-5.3h-5.3V47.4L57.9,47.4z M42.1,47.4h5.3v-5.3h-5.3V31.6h5.3h5.2v31.5h-5.2v-5.3h-5.3V47.4L42.1,47.4z   M26.4,47.4h5.2v-5.3h-5.2V31.6h5.2h5.3v31.5h-5.3v-5.3h-5.2V47.4L26.4,47.4z M15.9,31.6h5.3v31.5h-5.3V31.6L15.9,31.6z M5.4,78.9  h89.2v5.3H5.4V78.9L5.4,78.9z M10.6,68.4h78.7v5.2H10.6V68.4L10.6,68.4z M28.9,21.1h42.3L50,11.2L28.9,21.1L28.9,21.1z"></path>
+</svg>
+      </div>
+      <div class="texd">
+        <h3>awesome insfra-structure </h3>
+      </div>
+    </div>
+      <div class="items" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)">
+      <div class="svg_items">
+<svg  width="40" fill="#ff5722" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100;" xml:space="preserve">
+<path style="fill-rule:evenodd; clip-rule:evenodd;" d="M69.1,8.8L42.5,28.5L16,8.8V23C9,23.6,2.8,25.4,0,28.5v53.2  c7-7.7,35.6-7.7,42.5,0c2.4-2.6,7.2-4.3,12.8-5.2c3.9,4.7,9.8,7.8,16.4,7.8c4.9,0,9.4-1.7,13-4.5l11.4,11.4l3.8-3.8L88.6,76.1  c2.8-3.6,4.5-8.1,4.5-13c0-6.7-3.1-12.7-8-16.6V28.5c-2.8-3.1-9-4.9-16-5.5V8.8L69.1,8.8z M64.3,70.5c4.2,4.1,10.9,4.1,15,0  l-3.8-3.8c-2.1,2.1-5.4,2.1-7.5,0c-2.1-2.1-2.1-5.4,0-7.5l-3.8-3.8C60.1,59.7,60.1,66.4,64.3,70.5L64.3,70.5z M55.8,63  c0-8.8,7.1-16,16-16c8.8,0,16,7.1,16,16c0,8.8-7.1,16-16,16C63,79,55.8,71.8,55.8,63L55.8,63z M50.5,63c0-8.9,5.5-16.6,13.3-19.7  V19.4L45.2,33.2v40l6.1-4.5C50.8,66.9,50.5,65,50.5,63L50.5,63z M69.1,41.9c0.9-0.1,1.8-0.2,2.7-0.2c2.8,0,5.5,0.5,8,1.5V31  c-2.5-1.5-6.9-2.3-10.6-2.7V41.9L69.1,41.9z M39.9,33.2L21.3,19.4v40.1l18.6,13.7V33.2L39.9,33.2z M27.8,70.9L16,62.2V28.4  c-3.7,0.4-8.1,1.2-10.6,2.7v41.8C11.9,70.7,20.2,70.1,27.8,70.9L27.8,70.9z"></path>
+</svg>
+      </div>
+      <div class="texd">
+        <h3>international lessons plan</h3>
+      </div>
+    </div>
+    </div>
+   <div class="col-md-7 col-sm-12 "  style="height: 70vh; overflow: hidden; margin-top: 5%;">
+<div class="main" style="width: 100% !important; margin-top: -10%; " data-aos="zoom-in-left">
+  <ul class="cards" style=" width: 80%; margin: 0px auto;">
+    <li class="cards_item" id="item_salad">
+      <div class="card" style="width: 100% !important;">
+      
+        <div class="card_image">
+          <div class="card-group">
+            <div class="card"><img src="images/com.jpeg" alt="" style="width: 100%;"></div>
+            <div class="card"><img src="images/rename1.jpeg" alt=""  style="width: 100%;"></div>
+            <div class="card"><img src="images/jjk.png" alt=""  style="width: 300px;"></div>
+           </div>
+        </div>
+        <div class="card_content">
+          <h2 class="card_title">we are christian monterrosori school</h2>
+        </div>
+      </div>
+    </li>
+
+
+ 
+  </ul>
+</div>
+  </div>
+</div>
+
+<div class="row align-items-center justify-content-center impo1" >
+<div class="col-md-4">
+<img src="images/rename1.jpeg" style="width:100%;">
+</div> 
+  <div class="col-md-8 impo" style="position: relative;">
+    <div class="overlay_side"></div>
+<h2 class="gallery-text">
+  A School Dedicated to Fostering  <br >
+ <span style="padding: 10px 0px;"> Creativity</span> 
+ and Guiding  
+  Each Child
+  Toward Excellence.
+</h2>
+<p style="font-family: poppins; font-size: 18px; padding: 10px 0px; text-align: center;">
+With immense pleasure from the school mangaemnet. We welcome our dear parents,pupils to a new season.
+we cherish your partnership in all endeavours of life.
+The love and concern you have towards our institution is treasured,it is great pleasured to welcome you to our school website.
+</p>
+
+   <h4 class="text-center udosen_text" >Mrs lquo Effiong Udosen</h4>
+   <p class="text-center">Founder</p>
+  </div>
+
+</div>
+
+    </section>
+    <!-- <div class="container-fluid full-height">
+      <div class="row h-100">
+          <div class="col-md-6">
+              <img id="dynamicImage" src=images/tryh.jpeg" alt="Descriptive Alt Text" class="img-fluid h-100 w-100" style="object-fit: cover;">
+          </div>
+          <div class="col-md-6 text-container">
+              <ul class="nav nav-tabs" id="myTab" role="tablist">
+                  <li class="nav-item">
+                      <a class="nav-link active" id="about-tab" data-toggle="tab" href="#about" role="tab" aria-controls="about" aria-selected="true" onclick="changeImage('about')">About Us</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" id="benefits-tab" data-toggle="tab" href="#benefits" role="tab" aria-controls="benefits" aria-selected="false" onclick="changeImage('benefits')">Benefits</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" id="facilities-tab" data-toggle="tab" href="#facilities" role="tab" aria-controls="facilities" aria-selected="false" onclick="changeImage('facilities')">School Facilities</a>
+                  </li>
+              </ul>
+              <div class="tab-content" id="myTabContent">
+                  <div class="tab-pane fade show active" id="about" role="tabpanel" aria-labelledby="about-tab">
+                    <div class="about-section">
+                      <h2>About Us</h2>
+                      <p>
+                          At Christian Monterrosir School, we are committed to providing a transformative educational experience that nurtures both the mind and the spirit. Our mission is to inspire academic excellence, develop moral character, and cultivate a love for learning, all rooted in strong Christian values. We believe that education is not just about imparting knowledge, but also about shaping young hearts to be compassionate, responsible, and grounded in faith.
+                      </p>
+                      <p>
+                          Established with a vision to create a supportive and faith-centered learning environment, Christian Monterrosir School offers a holistic curriculum that combines rigorous academics with spiritual growth. Our dedicated team of educators works closely with each student to ensure they achieve their full potential—both in the classroom and in their personal faith journey.
+                      </p>
+                  </div>
+                  </div>
+                  <div class="tab-pane fade" id="benefits" role="tabpanel" aria-labelledby="benefits-tab">
+                    <div class="container">
+                      <h2>Benefits of School for Parents</h2>
+                      <ul class="benefits-list">
+                        <li>
+                          <div>
+                            <strong>Enhanced Academic Support</strong>
+                            <span>Schools provide personalized education to help students reach their full potential academically.</span>
+                          </div>
+                        </li>
+                        <li>
+                          <div>
+                            <strong>Safe and Structured Environment</strong>
+                            <span>Schools offer a secure space where students can focus on learning without distractions or risks.</span>
+                          </div>
+                        </li>
+                        <li>
+                          <div>
+                            <strong>Development of Social Skills</strong>
+                            <span>Children learn how to communicate, collaborate, and resolve conflicts with their peers.</span>
+                          </div>
+                        </li>
+                        <li>
+                          <div>
+                            <strong>Access to Extracurricular Activities</strong>
+                            <span>Schools provide opportunities for sports, arts, and clubs, fostering holistic growth.</span>
+                          </div>
+                        </li>
+                        <li>
+                          <div>
+                            <strong>Career Preparation</strong>
+                            <span>Schools help students prepare for future job opportunities by building a strong academic foundation.</span>
+                          </div>
+                        </li>
+                        <li>
+                          <div>
+                            <strong>Regular Progress Updates</strong>
+                            <span>Parents receive consistent feedback on their child's academic performance and behavior.</span>
+                          </div>
+                        </li>
+                        <li>
+                          <div>
+                            <strong>Learning Support</strong>
+                            <span>Schools cater to students with special needs, offering additional resources and assistance.</span>
+                          </div>
+                        </li>
+                        <li>
+                          <div>
+                            <strong>Community Involvement</strong>
+                            <span>Schools foster a sense of community, allowing parents to connect with each other and educators.</span>
+                          </div>
+                        </li>
+                        <li>
+                          <div>
+                            <strong>Improved Discipline and Time Management</strong>
+                            <span>Structured schedules and responsibilities help children develop important life skills.</span>
+                          </div>
+                        </li>
+                        <li>
+                          <div>
+                            <strong>Access to Technology</strong>
+                            <span>Schools often provide advanced learning tools and digital resources that enhance the educational experience.</span>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  
+                  </div>
+                  <div class="tab-pane fade" id="facilities" role="tabpanel" aria-labelledby="facilities-tab">
+                      <h3>School Facilities</h3>
+                      <p>Information about school facilities goes here.</p>
+                  </div>
+              </div>
+          </div>
+      </div>
+    </div> -->
+    
+    
+        <!-- Nursery Section -->
+        <section class="container-fluid  description_section" style="padding: 10px;">
+          <div class="overlay_description" style="background-color: rgba(0, 0, 0, 0.917);"></div>
+          <div class="title-section text-center mb-5">
+            <h1 class="title animated-title">Our Classes</h1>
+            <p class="subtitle">Explore our carefully curated classes for every stage of learning!</p>
+          </div>
+        
+          <div class="row">
+            <!-- Kindergarten Section -->
+            <div class="col-md-3">
+              <div class="class-card p-4 text-center">
+                <div class="icon-container animated-icon mb-3">
+                  <i class="fa fa-child icon"></i>
+                </div>
+                <h3>Kindergarten</h3>
+                <p><strong>Age:</strong> 3 - 5 years</p>
+                <p><strong>Details:</strong> Our kindergarten program focuses on early development, creativity, and social skills. Activities include play-based learning to enhance curiosity and interaction.</p>
+              </div>
+            </div>
+        
+            <!-- Nursery Section -->
+            <div class="col-md-3">
+              <div class="class-card p-4 text-center">
+                <div class="icon-container animated-icon mb-3">
+                  <i class="fa fa-puzzle-piece icon"></i>
+                </div>
+                <h3>Nursery</h3>
+                <p><strong>Age:</strong> 2 - 4 years</p>
+                <p><strong>Details:</strong> The nursery class is designed for toddlers to develop motor skills and foundational language through interactive and engaging activities.</p>
+              </div>
+            </div>
+        
+            <!-- Primary Section -->
+            <div class="col-md-3">
+              <div class="class-card p-4 text-center">
+                <div class="icon-container animated-icon mb-3">
+                  <i class="fa fa-graduation-cap icon"></i>
+                </div>
+                <h3>Primary</h3>
+                <p><strong>Age:</strong> 6 - 11 years</p>
+                <p><strong>Details:</strong> Our primary classes focus on academic skills, leadership, and self-expression. We provide a balanced curriculum with a blend of practical and theoretical learning.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        
+        <div class="container testimony-section" style="margin-top: 5%;">
+          <h2 class="text-center mb-4" style="font-family: poppins;">What Parents Say <br>
+            About Christian Montessori School</h2>
+        
+          <div class="row">
+            <div class="col-md-6">
+              <div class="testimony-slider">
+                <div class="containere">
+                  <div class="testimonial">
+                  <span class="open quote">“</span>
+                  <div class="image">
+                    <div class="clip"></div>
+                    <img src="images/rename1.jpeg"  style="width: 100px;">
+                  </div>
+                  <p>This is some testimonial text for this month's CodePen challenge! This is some testimonial text for this month's CodePen challenge!</p>
+                  <div class="source">		
+                    <span>Testimonial Source</span>
+                  </div>
+                  <span class="close quote">”</span>
+                </div>
+                </div>
+                <div class="containere display3">
+                  <div class="testimonial" >
+                  <span class="open quote">“</span>
+                  <div class="image">
+                    <div class="clip"></div>
+                    <img src="images/rename2.png" style="width: 100px;">
+                  </div>
+                  <p>This is some testimonial text for this month's CodePen challenge! This is some testimonial text for this month's CodePen challenge!</p>
+                  <div class="source">		
+                    <span>Testimonial Source</span>
+                  </div>
+                  <span class="close quote">”</span>
+                </div>
+                </div>
+                <div class="containere">
+                  <div class="testimonial">
+                  <span class="open quote">“</span>
+                  <div class="image">
+                    <div class="clip"></div>
+                    <img src="https://placehold.co/100">
+                  </div>
+                  <p>This is some testimonial text for this month's CodePen challenge! This is some testimonial text for this month's CodePen challenge!</p>
+                  <div class="source">		
+                    <span>Testimonial Source</span>
+                  </div>
+                  <span class="close quote">”</span>
+                </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 display3">
+              <div class="testimony-slider">
+                <div class="containere">
+                  <div class="testimonial">
+                  <span class="open quote">“</span>
+                  <div class="image">
+                    <div class="clip"></div>
+                    <img src="images/rename1.jpeg"  style="width: 100px;">
+                  </div>
+                  <p>This is some testimonial text for this month's CodePen challenge! This is some testimonial text for this month's CodePen challenge!</p>
+                  <div class="source">		
+                    <span>Testimonial Source</span>
+                  </div>
+                  <span class="close quote">”</span>
+                </div>
+                </div>
+                <div class="containere">
+                  <div class="testimonial" >
+                  <span class="open quote">“</span>
+                  <div class="image">
+                    <div class="clip"></div>
+                    <img src="images/rename2.png" style="width: 100px;">
+                  </div>
+                  <p>This is some testimonial text for this month's CodePen challenge! This is some testimonial text for this month's CodePen challenge!</p>
+                  <div class="source">		
+                    <span>Testimonial Source</span>
+                  </div>
+                  <span class="close quote">”</span>
+                </div>
+                </div>
+                <div class="containere">
+                  <div class="testimonial">
+                  <span class="open quote">“</span>
+                  <div class="image">
+                    <div class="clip"></div>
+                    <img src="https://placehold.co/100">
+                  </div>
+                  <p>This is some testimonial text for this month's CodePen challenge! This is some testimonial text for this month's CodePen challenge!</p>
+                  <div class="source">		
+                    <span>Testimonial Source</span>
+                  </div>
+                  <span class="close quote">”</span>
+                </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+   
+      
+       
+
+  <!-- <div class="container section-container">
+    <div class="row">
+ 
+      <div class="card  vision styles_card" style="width: 25%;">
+        <div class="card-body">
+          <h4 class="card-title">Vision</h4>
+          <p>Empowering minds, inspiring futures.</p>
+          <p>At [School Name], we envision a world where every student is equipped with the knowledge, skills, and values to excel in life and contribute positively to society. Our commitment to academic excellence and holistic development ensures that each student reaches their full potential and becomes a lifelong learner and responsible global citizen.</p>
+    
+        </div>
+      </div>
+        <div class="card  mission styles_card" style="width: 25%;">
+          <div class="card-body">
+            <h4 class="card-title">Mission</h4>
+            <p>Providing a nurturing environment for academic and personal growth.</p>
+            <p>[School Name] is dedicated to fostering a supportive and inclusive community 
+              that promotes academic achievement, character development, and the pursuit of knowledge. 
+              Our mission is to empower students through a dynamic curriculum, innovative teaching methods,
+               and a commitment to 
+              fostering creativity, critical thinking, and social responsibility.</p>
+        
+          </div>
+        </div>
+        <div class="card  mission " style="width: 25%;">
+          <div class="card-body">
+            <h4 class="card-title">Our History</h4>
+            <p>Established in [Year], [School Name] has a rich history of providing quality education and shaping the future leaders of tomorrow. From our humble beginnings to the present day, we have consistently strived for excellence in education, adapting to the changing needs of our students and the evolving landscape of education.</p>
+        
+          </div>
+        </div> -->
+        <div class="container-fluid contain">
+          <div class="card" id="ourvision">
+            <div class="box">
+              <div class="content" >
+                <h2>01</h2>
+                <h3 >our vision</h3>
+                <p>A Schools aims to bring up children with mind of undetaking the <span style="background-color: white;color: tomato; padding: 3px; font-weight: bold;">"old path"</span> combined with modern teaching aids/techniques towards
+                   the provision of educational services in our nursery and primary school system</p>
+              
+              </div>
+            </div>
+          </div>
+        
+          <div class="card">
+            <div class="box">
+              <div class="content">
+                <h2>02</h2>
+                <h3>Our mission</h3>
+                <p>Our mission is to provide qualitative and affordble nursery and primary education to our children based on christian morals standards and in line with the
+                   national curriculum and guidelines for nusery and primary schools.</p>
+              </div>
+            </div>
+          </div>
+        
+          <div class="card" id="ourhistory">
+            <div class="box">
+              <div class="content" >
+                <h2>03</h2>
+                <h3 >Our history</h3>
+                <p>The failling standard of education in nigeria,
+                   moral decadence, ascendency of secret cult activities among the youths,
+                   coupled with burning the burning desire in late Mr. Udosen's
+                    mind to pass on to the upcoming generation qualitative education 
+                    in which he had been a beneficary in the past,
+                  propelled him to established christian Montessori Nusery and primary school.</p>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      <!-- <div class=" col-md-4 card-overl">
+        <section id=" card-overl history" class="section animated">
+          <h2>Our History</h2>
+          <p style="width: 50%; ">Established in [Year], [School Name] has a rich history of providing quality education and shaping the future leaders of tomorrow. From our humble beginnings to the present day, we have consistently strived for excellence in education, adapting to the changing needs of our students and the evolving landscape of education.</p>
+          <p>Over the years, [School Name] has become a symbol of academic integrity, innovation, and community engagement. Our commitment to excellence has resulted in the success stories of countless graduates who have gone on to make meaningful contributions to various fields.</p>
+        </section>
+      </div> -->
+    </div>
+  </div>
+  <div class="modal fade drop" id="modalContactForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog" role="document"  >
+ <div class="modal-content" >
+ <div class="modal-header">
+     
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+      <div class="col-12">
+        <div class="mona-contact-form mb-80">
+          <div class="contact-heading">
+            <h4>Contact Us</h4>
+          </div>
+
+          <form action="#" method="post">
+            <div class="form-group">
+              <label for="fullName">Name:</label>
+              <input type="text" class="form-control" name="full-name" id="fullName" placeholder=" Your name">
+            </div>
+            <div class="form-group">
+              <label for="emailId">Email </label>
+              <input type="email" class="form-control" name="email" id="emailId"  placeholder=" phone number or email">
+            </div>
+            <div class="form-group">
+              <label for="resume">Resume:</label>
+              <textarea class="form-control" name="message" rows="3" cols="80" id="resume" placeholder="please write your message"></textarea>
+            </div>
+            <button class="btn mona-btn btn-2 mt-15">Contact Us<i class="fa fa-paper-plane"></i></button>
+          </form>
+        </div>
+      </div>
+   
+ </div>
+  </div>
+</div>
+<div class="map-container">
+  <iframe src="trymap.html" class="embedded-container"></iframe>
+  <div class="contact-card">
+    <h4>Christian Montessori Nursery and Primary School</h4>
+    <p><strong>Address:</strong>Umoren Street, Akwa Ibom State</p>
+    <p><strong>Phone:</strong> (+234) 8033107491</p>
+    <p><strong>Email:</strong> info@motorosirnursery.edu.ng</p>
+    <button class="btn" style="background-color: tomato; border-radius: 20px; color: white">Book Appointment</button>
+</div>
+</div>
+
+
+  <footer class="footer-section container-fluid">
+    <div class="container-fluid" >
+        <div class="footer-cta pt-5 pb-5">
+            <div class="row">
+                <div class="col-xl-4 col-md-4 mb-30">
+                    <div class="single-cta">
+                        <i class="fa fa-map-marker"></i>
+                        <div class="cta-text">
+                            <h4>Find us</h4>
+                            <span>24 Nepa Line, Uyo-Akwa ibom state</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-4 mb-30">
+                    <div class="single-cta">
+                        <i class="fa fa-phone"></i>
+                        <div class="cta-text">
+                            <h4>Call us</h4>
+                            <span>(+234) 8033107491</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-4 mb-30">
+                    <div class="single-cta">
+                        <i class="fa fa-envelope-open"></i>
+                        <div class="cta-text">
+                            <h4>Mail us</h4>
+                            <span>aiqoro@yahoo.com</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-content pt-5 pb-5">
+            <div class="row">
+                <div class="col-xl-4 col-lg-4 mb-50">
+                    <div class="footer-widget">
+                        <div class="footer-logo">
+                            <a href="index.html"><img src="images/logo.jpeg" class="img-fluid" alt="logo" style="border-radius: 20px;"></a>
+                        </div>
+                        <div class="footer-text">
+                            <p>At christian Montessori, we ignites minds and nurture potentials. Our commitment to excellence and passion for learning shape future leaders. Join us for an education that empowers.</p>
+                        </div>
+                        <div class="footer-social-icon">
+                            <span>Connect with us</span>
+                            <a href="#"><i class="fa fa-facebook-f facebook-bg"></i></a>
+                            <a href="#"><i class="fa fa-envelope-open fa-envelope-bg"></i></a>
+                            <a href="#"><i class="fa fa-whatsapp google-bg"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
+                    <div class="footer-widget">
+                        <div class="footer-widget-heading">
+                            <h3>Useful Links</h3>
+                        </div>
+                        <ul style="flex-direction: column;">
+                            <li><a href="index.htm">Home</a></li>uu
+                            <li><a href="#">about</a></li>
+                            <li><a href="#">events</a></li>
+                             <li><a href="#">gallery</a></li>
+                           
+                           
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-6 mb-50">
+                    <div class="footer-widget">
+                        <div class="footer-widget-heading">
+                            <h3>Subscribe</h3>
+                        </div>
+                        <div class="footer-text mb-25">
+                            <p>Don’t miss to subscribe to our new feeds, kindly fill the form below.</p>
+                        </div>
+                        <div class="subscribe-form">
+                            <form action="#">
+                                <input type="text" placeholder="Email Address">
+                                <button><i class="fa fa-envelope-open"></i></button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="copyright-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-6 col-lg-6 text-center text-lg-left">
+                    <div class="copyright-text">
+                        <p>Copyright &copy; 2024, All Right Reserved <a href="#">multicore ict solution</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<div class="modal" id="contact" style="overflow: auto;">
+  <div class="modal-dialog">
+  
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+
+
+</div>
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+  var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+  (function(){
+  var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+  s1.async=true;
+  s1.src='https://embed.tawk.to/66fa0b65e5982d6c7bb6719d/1i90bp9hg';
+  s1.charset='UTF-8';
+  s1.setAttribute('crossorigin','*');
+  s0.parentNode.insertBefore(s1,s0);
+  })();
+  </script>
+  <!--End of Tawk.to Script-->
+</body>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+<script src="owlcarousel/owl.carousel.min.js"></script>
+<script>
+  $(document).ready(function(){
+    $('.testimony-slider').slick({
+        dots: true, // Show dots for navigation
+        infinite: true, // Infinite loop sliding
+        speed: 500, // Animation speed
+        slidesToShow: 1, // Number of slides to show
+        slidesToScroll: 1, // Number of slides to scroll
+        autoplay: true, // Enable autoplay
+        autoplaySpeed: 3000, // Autoplay speed
+        arrows: false // Disable next/prev arrows
+    });
+});
+    $(document).ready(function () {
+      $(window).scroll(function () {
+        $('.section.animated').each(function () {
+          var position = $(this).offset().top;
+          var scroll = $(window).scrollTop();
+          if (position < scroll + $(window).height() * 0.85) {
+            $(this).addClass('fadeInUp');
+          }
+        });
+      });
+    });
+</script>
+<script src="scrolltop.js"></script>
+<script>
+const menuToggle = document.getElementById('menu-toggle');
+const navLinks = document.getElementById('nav-liks');
+
+menuToggle.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+});
+
+document.querySelectorAll('.dropdon > a').forEach(dropdownLink => {
+    dropdownLink.addEventListener('click', function(e) {
+        e.preventDefault();
+        this.parentNode.classList.toggle('active');
+    });
+});
+function changeImage(tab) {
+        const image = document.getElementById("dynamicImage");
+        switch (tab) {
+            case 'about':
+                image.src = 'images/kids.jpg'; // Replace with your About Us image URL
+                break;
+            case 'benefits':
+                image.src = 'images/try.jpeg'; // Replace with your Benefits image URL
+                break;
+            case 'facilities':
+                image.src = 'images/try.jpeg'; // Replace with your School Facilities image URL
+                break;
+            default:
+                image.src = 'images/tryh.jpeg'; // Default image URL
+        }
+    }
+
+</script>
+<script>
+  const animateCSS = (element, animation, prefix = 'animate__') =>
+  // We create a Promise and return it
+  new Promise((resolve, reject) => {
+    const animationName = `${prefix}${animation}`;
+    const node = document.querySelector(element);
+
+    node.classList.add(`${prefix}animated`, animationName);
+
+    // When the animation ends, we clean the classes and resolve the Promise
+    function handleAnimationEnd(event) {
+      event.stopPropagation();
+      node.classList.remove(`${prefix}animated`, animationName);
+      resolve('Animation ended');
+    }
+
+    node.addEventListener('animationend', handleAnimationEnd, {once: true});
+  });
+  animateCSS('.info-card', 'animate__slideInLeft');
+</script>
+<script>
+  AOS.init();
+</script>
+
+</html>

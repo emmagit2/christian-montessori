@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Christian School Admission</title>
+    <!-- Bootstrap 4 CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+    <!-- FontAwesome 4 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="fr.css">
+<link rel="stylesheet" href="css/school.css">
+    <style>
+        /* Custom Styles */
+        body {
+            background-color: #f4f6f9;
+            background-color: #f4f6f9;
+        }
+
+        .navbar {
+            background-color: #343a40;
+        }
+
+        .form-section {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .breadcrumb {
+            background-color: transparent;
+        }
+
+        .timeline {
+            list-style: none;
+            padding: 20px;
+        }
+
+        .timeline p {
+            margin-bottom: 20px;
+            position: relative;
+            padding-left: 40px;
+        }
+
+        .timeline p::before {
+            content: "\f10c"; /* FontAwesome circle icon */
+            font-family: FontAwesome;
+            position: absolute;
+            left: 0;
+            top: 0;
+            background: #28a745;
+            color: white;
+            border-radius: 50%;
+            height: 30px;
+            width: 30px;
+            text-align: center;
+            line-height: 30px;
+        }
+
+        .modal-header {
+            background-color: #17a2b8;
+            color: #fff;
+        }
+
+        .event-section {
+            margin-top: 50px;
+        }
+
+        .event-card {
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border: none;
+            border-radius: 8px;
+            transition: transform 0.3s;
+        }
+
+        .event-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .card-title {
+            font-size: 1.25rem;
+        }
+
+        .card-date {
+            font-size: 0.9rem;
+            color: #6c757d;
+            margin-top: 5px;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2rem;
+            font-weight: bold;
+            margin-bottom: 20px;
+            color: #343a40;
+        }
+        .menu{
+            height: 70vh;
+            position: relative;
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+            background-image: url(images/ren.jpeg);
+        }
+        .menu::before{
+            content: "";
+            position: absolute;
+            background-color: #000000b3;
+            width: 100%;
+            height: inherit;
+        }
+        .form-control-file {
+    position: relative;
+    overflow: hidden;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    padding: 0.5rem;
+}
+
+.form-control-file::file-selector-button {
+    display: none; /* Hide default button */
+}
+
+.form-control-file::after {
+    content: 'Choose File'; /* Custom button text */
+    display: inline-block;
+    background-color: #007bff;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    cursor: pointer;
+}
+
+.form-control-file:hover::after {
+    background-color: #0056b3; /* Change color on hover */
+}
+
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+ 
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <a class="navbar-brand" href="#">
+          <img src="images/logo.jpeg" alt="Logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Our Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About Us</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Academics
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="#">School Details</a>
+                <a class="dropdown-item" href="#">Gallery</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Portal</a>
+            </li>
+          </ul>
+      
+          <div class="social-icons">
+            <a href="#"><i class="fa fa-facebook-f facebook-bg"></i></a>
+            <a href="#"><i class="fa fa-envelope-open fa-envelope-bg"></i></a>
+
+            <a href="#"><i class="fa fa-whatsapp google-bg"></i></a>
+          </div>
+        </div>
+      </nav>
+    <div class="menu">
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio libero aperiam recusandae assumenda voluptatum tempore? Dolores eum, aliquid vel consequuntur esse ex voluptatibus! Expedita sequi soluta ipsum, excepturi harum iste. Ex, inventore?</p>
+    </div>
+    <!-- Breadcrumb -->
+    <div aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Admission Form</li>
+        </ol>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container mt-5" id="admission">
+        <h1>Admission form</h1>
+        <!-- Admission Form Section -->
+        <div class="row">
+            <div class="col-md-8">
+                <div class="form-section">
+                    <h3 class="mb-4">Admission Registration Form</h3>
+                    <form id="admissionForm" enctype="multipart/form-data">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <!-- Student Details -->
+                                <div class="form-group">
+                                    <label for="FirstName">First Name</label>
+                                    <input type="text" class="form-control" id="FirstName" placeholder="Enter child First Name" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="MiddleName">Middle Name</label>
+                                    <input type="text" class="form-control" id="MiddleName" placeholder="Enter child Middle Name" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="LastName">Last Name</label>
+                                    <input type="text" class="form-control" id="LastName" placeholder="Enter child Last Name" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="parentName">Parent Name</label>
+                                    <input type="text" class="form-control" id="parentName" placeholder="Enter Parent name" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Parent Email</label>
+                                    <input type="email" class="form-control" id="email" placeholder="Enter email" required>
+                                </div>
+    
+                                <!-- Gender Selection -->
+                                <div class="form-group">
+                                    <label>Gender</label>
+                                    <div>
+                                        <label class="mr-2">
+                                            <input type="radio" name="gender" value="Male" required> Male
+                                        </label>
+                                        <label>
+                                            <input type="radio" name="gender" value="Female" required> Female
+                                        </label>
+                                    </div>
+                                </div>
+    
+                                <!-- Parent Occupation -->
+                                <div class="form-group">
+                                    <label for="parentOccupation">Parent Occupation</label>
+                                    <input type="text" class="form-control" id="parentOccupation" placeholder="Enter Parent Occupation" required>
+                                </div>
+    
+                                <!-- Address -->
+                                <div class="form-group">
+                                    <label for="address">Address</label>
+                                    <textarea class="form-control" id="address" placeholder="Enter Address" rows="3" required></textarea>
+                                </div>
+                            </div>
+                            
+                            <div class="col-md-6">
+                                <!-- Grade Selection -->
+                                <div class="form-group">
+                                    <label for="grade">Grade Applying For</label>
+                                    <select class="form-control" id="grade" required>
+                                        <option>Kindergarten</option>
+                                        <option>Primary 1</option>
+                                        <option>Primary 2</option>
+                                        <option>Primary 3</option>
+                                        <option>Primary 4</option>
+                                        <option>Primary 5</option>
+                                    </select>
+                                </div>
+    
+                                <!-- Picture Upload and Preview -->
+                                <div class="form-group">
+                                    <label for="picture">Upload Picture</label>
+                                    <input type="file" class="form-control-file" id="picture" required onchange="previewImage()">
+                                    <img id="picturePreview" src="#" alt="Image Preview" class="mt-3" style="display: none; max-width: 200px;">
+                                </div>
+    
+                                <!-- Birth Certificate Upload -->
+                                <div class="form-group">
+                                    <label for="birthCertificate">Upload Birth Certificate</label>
+                                    <input type="file" class="form-control-file" id="birthCertificate" required>
+                                </div>
+    
+                                <!-- School Result Upload -->
+                                <div class="form-group">
+                                    <label for="schoolResult">Upload Current School Result</label>
+                                    <input type="file" class="form-control-file" id="schoolResult" required>
+                                </div>
+    
+                                <!-- Physical Issues -->
+                                <div class="form-group">
+                                    <label for="physicalIssues">Does the child have any physical issues?</label>
+                                    <select class="form-control" id="physicalIssues" onchange="togglePhysicalConditionInput()">
+                                        <option value="No">No</option>
+                                        <option value="Yes">Yes</option>
+                                    </select>
+                                </div>
+    
+                                <!-- Physical Condition Description -->
+                                <div class="form-group" id="physicalConditionContainer" style="display: none;">
+                                    <label for="physicalCondition">Please describe the physical condition:</label>
+                                    <textarea class="form-control" id="physicalCondition" placeholder="Enter physical condition details" rows="3"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+            </div>
+    
+   
+
+    <!-- Schedule Popup Button -->
+    <div class="container text-center my-5">
+        <button type="button" class="btn btn-info" data-toggle="modal" data-target="#scheduleModal">
+            Book a Schedule with the School
+        </button>
+    </div>
+
+    <!-- Schedule Popup Modal -->
+    <div class="modal fade" id="scheduleModal" tabindex="-1" role="dialog" aria-labelledby="scheduleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="scheduleModalLabel">Book a Schedule with Us</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="scheduleName">Your Name</label>
+                            <input type="text" class="form-control" id="scheduleName" placeholder="Enter your name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="scheduleEmail">Email Address</label>
+                            <input type="email" class="form-control" id="scheduleEmail" placeholder="Enter email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="scheduleDate">Preferred Date</label>
+                            <input type="date" class="form-control" id="scheduleDate" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="scheduleTime">Preferred Time</label>
+                            <input type="time" class="form-control" id="scheduleTime" required>
+                        </div>
+                        <button type="submit" class="btn btn-info">Book Schedule</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Upcoming Events Section with Dates -->
+    <div class="container event-section">
+        <h2 class="section-title">Upcoming Events</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card event-card">
+                    <img class="card-img-top" src="event1.jpg" alt="Event 1">
+                    <div class="card-body">
+                        <h5 class="card-title">School Orientation</h5>
+                        <p class="card-text">Join us for an introductory session for new students and parents.</p>
+                        <p class="card-date">Date: September 15th</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card event-card">
+                    <img class="card-img-top" src="event2.jpg" alt="Event 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Parent-Teacher Conference</h5>
+                        <p class="card-text">Scheduled for October 5th, a chance for parents to meet teachers and discuss student progress.</p>
+                        <p class="card-date">Date: October 5th</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card event-card">
+                    <img class="card-img-top" src="event3.jpg" alt="Event 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Annual Christmas Show</h5>
+                        <p class="card-text">Celebrate the festive season with us on December 20th with performances and more.</p>
+                        <p class="card-date">Date: December 20th</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap 4 JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script>
+        // Preview uploaded picture
+        function previewImage() {
+            const file = document.getElementById("picture").files[0];
+            const reader = new FileReader();
+            reader.onload = function (e) {
+                document.getElementById("picturePreview").src = e.target.result;
+                document.getElementById("picturePreview").style.display = "block";
+            };
+            reader.readAsDataURL(file);
+        }
+        
+        // AJAX submission
+        document.getElementById("admissionForm").addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    // Allowed MIME types
+    const allowedImageTypes = ['image/jpeg', 'image/png', 'image/jpg'];
+    const allowedDocTypes = [
+        'application/pdf',
+        'application/msword', // .doc
+        'application/vnd.openxmlformats-officedocument.wordprocessingml.document' // .docx
+    ];
+    const allowedBirthCertTypes = allowedImageTypes.concat(allowedDocTypes);
+    const allowedSchoolResultTypes = allowedImageTypes.concat(allowedDocTypes);
+
+    // Get files
+    const picture = document.getElementById("picture").files[0];
+    const birthCertificate = document.getElementById("birthCertificate").files[0];
+    const schoolResult = document.getElementById("schoolResult").files[0];
+
+    // Validate 'picture' (only images)
+    if (!allowedImageTypes.includes(picture.type)) {
+        alert("Only JPEG, JPG, and PNG formats are allowed for the picture.");
+        return;
+    }
+
+    // Validate 'birthCertificate' (images or documents)
+    if (!allowedBirthCertTypes.includes(birthCertificate.type)) {
+        alert("Only JPEG, JPG, PNG, PDF, DOC, and DOCX formats are allowed for the birth certificate.");
+        return;
+    }
+
+    // Validate 'schoolResult' (images or documents)
+    if (!allowedSchoolResultTypes.includes(schoolResult.type)) {
+        alert("Only JPEG, JPG, PNG, PDF, DOC, and DOCX formats are allowed for the school result.");
+        return;
+    }
+
+    // If validation passes, submit the form via AJAX
+    const formData = new FormData(this);
+
+    fetch('submit_form.php', {
+        method: 'POST',
+        body: formData
+    })
+    .then(response => response.json())
+    .then(data => {
+        if (data.success) {
+            alert("Form submitted successfully!");
+        } else {
+            alert("Error: " + data.message);
+        }
+    })
+    .catch(error => {
+        console.error('Error:', error);
+    });
+});
+         function togglePhysicalConditionInput() {
+        const physicalIssues = document.getElementById('physicalIssues').value;
+        const physicalConditionContainer = document.getElementById('physicalConditionContainer');
+        physicalConditionContainer.style.display = (physicalIssues === 'Yes') ? 'block' : 'none';
+    }
+
+        </script>
+        
+</body>
+
+</html>
+
