@@ -868,8 +868,8 @@ width: 100% !important;
           margin-top: -32%;
 }
 .navbar-nav .dropdown-menu{
-  margin: 0px 2rem;
-  width: 80%;
+  margin: 0px;
+  width: 120%;
 }
 .main .card_text{
   margin-top: -9%;

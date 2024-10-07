@@ -26,7 +26,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
 <style>
   .navbar{
     background-color: white !important;
-    z-index: 100000;
+    z-index: 10000000000 !important;
   }
   .sch{
     color:#ff6347;
@@ -499,7 +499,7 @@ height:auto;
             flex-direction: row;
         }
         .nav-link {
-            padding-right: 15px;
+            padding-right: 8px;
             transition: color 0.3s ease;
         }
         .nav-link:hover {
@@ -969,22 +969,31 @@ top: 0%;
     width: 100%; 
     padding: 10px;
   }
+  .nav-link{
+   display:block;
+  }
+  .social-icons{
+    margin: 10px auto;
+    width: 50%;
+  }
   .description_section .row > div{
 
     max-width: 100%;
   }
   .navbar{
     padding: 15px !important;
+
+
+  }
+  .navbar-nav{
+flex-direction: column;
+margin: 10px !important;
+
   }
   .navbar-brand img {
        width: 80px;
     }
-    .text-side{
-width:400px;
-
-
-
-    }
+ 
 
   .school-image{
     height: 50vh;
@@ -1082,7 +1091,7 @@ width:400px;
     flex-direction: column;
   }
   .description_section .row > div{
-    max-width: 70%;
+
     margin: 0px auto;
     
   }
@@ -1134,6 +1143,7 @@ width:400px;
     .items{
 width: 100%;
     }
+
 }
 </style>
 </head>

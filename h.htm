@@ -96,7 +96,7 @@
             color: #343a40;
         }
         .menu{
-            height: 70vh;
+            height: 50vh;
             position: relative;
             background-position: center center;
             background-repeat: no-repeat;
@@ -110,6 +110,12 @@
             background-color: #000000b3;
             width: 100%;
             height: inherit;
+        }
+        .menu p, .menu h2{
+            position: relative;
+            color: white;
+             top: 50%;
+             text-align: center;
         }
         .form-control-file {
     position: relative;
@@ -136,6 +142,91 @@
 .form-control-file:hover::after {
     background-color: #0056b3; /* Change color on hover */
 }
+@media  screen and (max-width: 600px) {
+  .udosen_text{
+    width: 100%; 
+    padding: 10px;
+  }
+  .nav-link{
+   display:block;
+  }
+  .social-icons{
+    margin: 10px auto;
+    width: 50%;
+  }
+  .description_section .row > div{
+
+    max-width: 100%;
+  }
+  .navbar{
+    padding: 15px !important;
+
+
+  }
+  .navbar-nav{
+flex-direction: column;
+margin: 10px !important;
+
+  }
+  .navbar-brand img {
+       width: 80px;
+    }
+ 
+
+  .school-image{
+    height: 50vh;
+    width: 100%;
+    border-radius: 30px;
+  }
+  .button-container{
+    margin: 0px auto;
+  }
+  .gallery-text{
+    width: 100%;
+  
+  }
+  .containere{
+    min-height: 60vh;
+  }
+  .display3{
+    display: none;
+  }
+  .testimonial::before{
+    bottom: -7.2em;
+  }
+  .gallery-text:before {
+    display: none;
+  }
+  .crs-card{
+    width: 350px;
+  }
+  .impo{
+    width: 100% !important;
+  }
+  .impo1
+  {
+    width: 100%;
+    margin: 0px;
+  }
+  .nav-tabs{
+    width: 100%;
+  }
+  .testimonial &:after{
+   top: -3rem;
+  }
+  .testimony-section{
+    height: auto;
+  }
+  .map-container{
+    display: flex;
+    flex-direction: column;
+  }
+  .contact-card{
+    position: relative;
+    width: 100%;
+  }
+}
+
 
     </style>
 </head>
@@ -153,38 +244,49 @@
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link" href="#">Home</a>
+              <a class="nav-link" href="index.html">Home</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Our Gallery</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">About Us</a>
+    
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              About us
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink1">
+                <a class="dropdown-item" href="index.html#ourvision">Our vision</a>
+                <a class="dropdown-item" href="index.html#ourmission">Our mission</a>
+                <a class="dropdown-item" href="index.html#ourhistory">Why christian Montessori</a>
+             
+              </div>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Our Gallery</a>
+              </li>
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Academics
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <a class="dropdown-item" href="#">School Details</a>
-                <a class="dropdown-item" href="#">Gallery</a>
+                <a class="dropdown-item" href="h.htm">Apply for admission</a>
+                <a class="dropdown-item" href="#Upcoming">Upcoming Event</a>
+                <a class="dropdown-item" href="Javscript:void(0)">school calender</a>
               </div>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Portal</a>
+              <a class="nav-link" href="Javscript:void(0)">Portal</a>
             </li>
           </ul>
       
           <div class="social-icons">
             <a href="#"><i class="fa fa-facebook-f facebook-bg"></i></a>
             <a href="#"><i class="fa fa-envelope-open fa-envelope-bg"></i></a>
-
             <a href="#"><i class="fa fa-whatsapp google-bg"></i></a>
           </div>
         </div>
       </nav>
     <div class="menu">
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio libero aperiam recusandae assumenda voluptatum tempore? Dolores eum, aliquid vel consequuntur esse ex voluptatibus! Expedita sequi soluta ipsum, excepturi harum iste. Ex, inventore?</p>
+       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+        Aperiam reiciendis veritatis odit placeat quia sit. 
+        Laudantium sint atque error, voluptatibus voluptas laboriosam nihil.</p>
     </div>
     <!-- Breadcrumb -->
     <div aria-label="breadcrumb">
@@ -353,7 +455,7 @@
 
     <!-- Upcoming Events Section with Dates -->
     <div class="container event-section">
-        <h2 class="section-title">Upcoming Events</h2>
+        <h2 class="section-title" id="upcoming">Upcoming Events</h2>
         <div class="row">
             <div class="col-md-4">
                 <div class="card event-card">
