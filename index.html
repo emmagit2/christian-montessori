@@ -26,7 +26,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
 <style>
   .navbar{
     background-color: white !important;
-    z-index: 10000000000 !important;
+    z-index: 1000000 !important;
   }
   .sch{
     color:#ff6347;
@@ -112,7 +112,7 @@ background-color: white;
     flex-wrap: wrap;
     gap: 20px;
     position: relative;
-    z-index: 100000;
+    z-index: 100;
     padding: 20px;
     background-color: #ffffff;
 }
@@ -254,10 +254,10 @@ height:auto;
 			right: 0;
 		}
 	}
-	p {
-		width: 60%;
+	testimonial p {
+		width: 70%;
 		display: inline-block;
-		font-size: 1.2em;
+		font-size: 0.7em;
 	}
 	.source {
 		width: 40%;
@@ -742,8 +742,7 @@ height:auto;
 
     .info-card {
       width: 90%;
-      left: 50%;
-      transform: translateX(-50%);
+      left: 15%;
     }
   }
 
@@ -908,21 +907,7 @@ top: 0%;
     }
 
     /* Ensure dropdowns work in mobile view */
-    .dropdon-menu {
-        position: relative;
-    }
-
-    .dropdon:hover .dropdon-menu {
-        display: none;
-    }
-
-    .dropdon.active .dropdon-menu {
-        display: block;
-        opacity: 1;
-        visibility: visible;
-        transform: translateY(0);
-    }
-}
+ 
 /* Masonry Grid */
 .masonry-grid {
     display: grid;
@@ -967,7 +952,23 @@ top: 0%;
 @media  screen and (max-width: 600px) {
   .udosen_text{
     width: 100%; 
-    padding: 10px;
+    padding: 4px;
+  }
+  .testimonial{
+    flex-direction: column;
+  }
+  .testimonial p{
+    margin-top: 34%;
+  }
+  .impo1 img{
+    margin: 10px 10% !important;
+  }
+  .text-side{
+    margin-top: 10%;
+  }
+  body{
+    margin-right: 0px !important;
+    overflow-x: hidden;
   }
   .nav-link{
    display:block;
@@ -1075,7 +1076,7 @@ margin: 10px !important;
     margin: 0px auto;
   } 
   .content2 h2 {
-    width: 80%;
+    width: 100%;
     margin: 0px auto;
     text-align: center;
   }
@@ -1159,24 +1160,24 @@ width: 100%;
     <div class="collapse navbar-collapse" id="navbarNavDropdown">
       <ul class="navbar-nav ml-auto">
         <li class="nav-item">
-          <a class="nav-link" href="#">Home</a>
+          <a class="nav-link nav-liks" href="#">Home</a>
         </li>
 
-        <li class="nav-item dropdown">
+        <li class="nav-item dropdown dropdon">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           About us
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink1">
-            <a class="dropdown-item" href="#ourvision">Our vision</a>
+            <a class="dropdown-item " href="#ourvision">Our vision</a>
             <a class="dropdown-item" href="#ourmission">Our mission</a>
             <a class="dropdown-item" href="#ourhistory">Why christian Montessori</a>
          
           </div>
           <li class="nav-item">
-            <a class="nav-link" href="#">Our Gallery</a>
+            <a class="nav-link nav-liks" href="#">Our Gallery</a>
           </li>
         </li>
-        <li class="nav-item dropdown">
+        <li class="nav-item dropdown dropdon">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             Academics
           </a>
@@ -1187,7 +1188,7 @@ width: 100%;
           </div>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="Javscript:void(0)">Portal</a>
+          <a class="nav-link nav-liks" href="Javscript:void(0)">Portal</a>
         </li>
       </ul>
   
@@ -1285,7 +1286,7 @@ width: 100%;
     </div>
 </div>
 
-  <section class="container-fluid content2" style="height: auto;">
+  <section class="container-fluid content2" style="height: auto;" id="ourhistory">
       <div class="overlay"></div>
 <div class="row">
   <div class="col-md-5 col-sm-12">
@@ -1351,11 +1352,11 @@ width: 100%;
 </div>
 
 <div class="row align-items-center justify-content-center impo1" >
-<div class="col-md-4">
-<img src="images/rename1.jpeg" style="width:100%;">
+<div class="col-md-4" data-aos="fade-up-right">
+<img src="images/ma.png" style="width:80%;border-radius: 20%;">
 </div> 
   <div class="col-md-8 impo" style="position: relative;">
-    <div class="overlay_side"></div>
+    <div class="overlay_side" data-aos="slide-down"></div>
 <h2 class="gallery-text">
   A School Dedicated to Fostering  <br >
  <span style="padding: 10px 0px;"> Creativity</span> 
@@ -1376,111 +1377,6 @@ The love and concern you have towards our institution is treasured,it is great p
 </div>
 
     </section>
-    <!-- <div class="container-fluid full-height">
-      <div class="row h-100">
-          <div class="col-md-6">
-              <img id="dynamicImage" src=images/tryh.jpeg" alt="Descriptive Alt Text" class="img-fluid h-100 w-100" style="object-fit: cover;">
-          </div>
-          <div class="col-md-6 text-container">
-              <ul class="nav nav-tabs" id="myTab" role="tablist">
-                  <li class="nav-item">
-                      <a class="nav-link active" id="about-tab" data-toggle="tab" href="#about" role="tab" aria-controls="about" aria-selected="true" onclick="changeImage('about')">About Us</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link" id="benefits-tab" data-toggle="tab" href="#benefits" role="tab" aria-controls="benefits" aria-selected="false" onclick="changeImage('benefits')">Benefits</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link" id="facilities-tab" data-toggle="tab" href="#facilities" role="tab" aria-controls="facilities" aria-selected="false" onclick="changeImage('facilities')">School Facilities</a>
-                  </li>
-              </ul>
-              <div class="tab-content" id="myTabContent">
-                  <div class="tab-pane fade show active" id="about" role="tabpanel" aria-labelledby="about-tab">
-                    <div class="about-section">
-                      <h2>About Us</h2>
-                      <p>
-                          At Christian Monterrosir School, we are committed to providing a transformative educational experience that nurtures both the mind and the spirit. Our mission is to inspire academic excellence, develop moral character, and cultivate a love for learning, all rooted in strong Christian values. We believe that education is not just about imparting knowledge, but also about shaping young hearts to be compassionate, responsible, and grounded in faith.
-                      </p>
-                      <p>
-                          Established with a vision to create a supportive and faith-centered learning environment, Christian Monterrosir School offers a holistic curriculum that combines rigorous academics with spiritual growth. Our dedicated team of educators works closely with each student to ensure they achieve their full potential—both in the classroom and in their personal faith journey.
-                      </p>
-                  </div>
-                  </div>
-                  <div class="tab-pane fade" id="benefits" role="tabpanel" aria-labelledby="benefits-tab">
-                    <div class="container">
-                      <h2>Benefits of School for Parents</h2>
-                      <ul class="benefits-list">
-                        <li>
-                          <div>
-                            <strong>Enhanced Academic Support</strong>
-                            <span>Schools provide personalized education to help students reach their full potential academically.</span>
-                          </div>
-                        </li>
-                        <li>
-                          <div>
-                            <strong>Safe and Structured Environment</strong>
-                            <span>Schools offer a secure space where students can focus on learning without distractions or risks.</span>
-                          </div>
-                        </li>
-                        <li>
-                          <div>
-                            <strong>Development of Social Skills</strong>
-                            <span>Children learn how to communicate, collaborate, and resolve conflicts with their peers.</span>
-                          </div>
-                        </li>
-                        <li>
-                          <div>
-                            <strong>Access to Extracurricular Activities</strong>
-                            <span>Schools provide opportunities for sports, arts, and clubs, fostering holistic growth.</span>
-                          </div>
-                        </li>
-                        <li>
-                          <div>
-                            <strong>Career Preparation</strong>
-                            <span>Schools help students prepare for future job opportunities by building a strong academic foundation.</span>
-                          </div>
-                        </li>
-                        <li>
-                          <div>
-                            <strong>Regular Progress Updates</strong>
-                            <span>Parents receive consistent feedback on their child's academic performance and behavior.</span>
-                          </div>
-                        </li>
-                        <li>
-                          <div>
-                            <strong>Learning Support</strong>
-                            <span>Schools cater to students with special needs, offering additional resources and assistance.</span>
-                          </div>
-                        </li>
-                        <li>
-                          <div>
-                            <strong>Community Involvement</strong>
-                            <span>Schools foster a sense of community, allowing parents to connect with each other and educators.</span>
-                          </div>
-                        </li>
-                        <li>
-                          <div>
-                            <strong>Improved Discipline and Time Management</strong>
-                            <span>Structured schedules and responsibilities help children develop important life skills.</span>
-                          </div>
-                        </li>
-                        <li>
-                          <div>
-                            <strong>Access to Technology</strong>
-                            <span>Schools often provide advanced learning tools and digital resources that enhance the educational experience.</span>
-                          </div>
-                        </li>
-                      </ul>
-                    </div>
-                  
-                  </div>
-                  <div class="tab-pane fade" id="facilities" role="tabpanel" aria-labelledby="facilities-tab">
-                      <h3>School Facilities</h3>
-                      <p>Information about school facilities goes here.</p>
-                  </div>
-              </div>
-          </div>
-      </div>
-    </div> -->
     
     
         <!-- Nursery Section -->
@@ -1493,13 +1389,13 @@ The love and concern you have towards our institution is treasured,it is great p
         
           <div class="row">
             <!-- Kindergarten Section -->
-            <div class="col-md-3">
+            <div class="col-md-3" data-aos="zoom-in-right">
               <div class="class-card p-4 text-center">
                 <div class="icon-container animated-icon mb-3">
                   <i class="fa fa-child icon"></i>
                 </div>
                 <h3>Kindergarten</h3>
-                <p><strong>Age:</strong> 3 - 5 years</p>
+                <p><strong>Age:</strong> 2years - 4years</p>
                 <p><strong>Details:</strong> Our kindergarten program focuses on early development, creativity, and social skills. Activities include play-based learning to enhance curiosity and interaction.</p>
               </div>
             </div>
@@ -1511,13 +1407,13 @@ The love and concern you have towards our institution is treasured,it is great p
                   <i class="fa fa-puzzle-piece icon"></i>
                 </div>
                 <h3>Nursery</h3>
-                <p><strong>Age:</strong> 2 - 4 years</p>
+                <p><strong>Age:</strong> 5- 6years</p>
                 <p><strong>Details:</strong> The nursery class is designed for toddlers to develop motor skills and foundational language through interactive and engaging activities.</p>
               </div>
             </div>
         
             <!-- Primary Section -->
-            <div class="col-md-3">
+            <div class="col-md-3" data-aos="zoom-in-left">
               <div class="class-card p-4 text-center">
                 <div class="icon-container animated-icon mb-3">
                   <i class="fa fa-graduation-cap icon"></i>
@@ -1542,11 +1438,15 @@ The love and concern you have towards our institution is treasured,it is great p
                   <span class="open quote">“</span>
                   <div class="image">
                     <div class="clip"></div>
-                    <img src="images/rename1.jpeg"  style="width: 100px;">
+                    <img src="images/dad1.jpeg"  style="width: 100px;">
                   </div>
-                  <p>This is some testimonial text for this month's CodePen challenge! This is some testimonial text for this month's CodePen challenge!</p>
+                  <p>
+                    The school’s commitment to innovation is fantastic. Our child is always excited to share the new things they’ve learned, 
+                    especially with the technology and project-based learning initiatives.
+                    
+                    </p>
                   <div class="source">		
-                    <span>Testimonial Source</span>
+                    <span>Parent</span>
                   </div>
                   <span class="close quote">”</span>
                 </div>
@@ -1556,11 +1456,15 @@ The love and concern you have towards our institution is treasured,it is great p
                   <span class="open quote">“</span>
                   <div class="image">
                     <div class="clip"></div>
-                    <img src="images/rename2.png" style="width: 100px;">
+                    <img src="images/mom1.jpeg" style="width: 100px;">
                   </div>
-                  <p>This is some testimonial text for this month's CodePen challenge! This is some testimonial text for this month's CodePen challenge!</p>
+                  <p>
+                    We appreciate the small class sizes. Our child gets a lot of individual attention, which has really helped with
+                     their confidence and academic performance. The teachers know every child well.
+                    
+                    </p>
                   <div class="source">		
-                    <span>Testimonial Source</span>
+                    <span>Parent</span>
                   </div>
                   <span class="close quote">”</span>
                 </div>
@@ -1570,11 +1474,14 @@ The love and concern you have towards our institution is treasured,it is great p
                   <span class="open quote">“</span>
                   <div class="image">
                     <div class="clip"></div>
-                    <img src="https://placehold.co/100">
+                    <img src="images/mom2.jpeg" style="width: 100px;">
                   </div>
-                  <p>This is some testimonial text for this month's CodePen challenge! This is some testimonial text for this month's CodePen challenge!</p>
+                  <p>
+                    The school provides a safe and secure environment. We never have to worry about our child’s well-being while they are 
+                    at school. The staff is attentive and the facilities are top-notch.
+                    </p>
                   <div class="source">		
-                    <span>Testimonial Source</span>
+                    <span>Parent</span>
                   </div>
                   <span class="close quote">”</span>
                 </div>
@@ -1588,11 +1495,15 @@ The love and concern you have towards our institution is treasured,it is great p
                   <span class="open quote">“</span>
                   <div class="image">
                     <div class="clip"></div>
-                    <img src="images/rename1.jpeg"  style="width: 100px;">
+                    <img src="images/dad2.webp"  style="width: 100px;">
                   </div>
-                  <p>This is some testimonial text for this month's CodePen challenge! This is some testimonial text for this month's CodePen challenge!</p>
+                  <p>
+                    We are really impressed with the school's nurturing environment.
+                     Our child has shown remarkable growth both academically
+                     and socially. The teachers are always supportive and approachable.
+                    </p>
                   <div class="source">		
-                    <span>Testimonial Source</span>
+                    <span>Parent</span>
                   </div>
                   <span class="close quote">”</span>
                 </div>
@@ -1604,9 +1515,12 @@ The love and concern you have towards our institution is treasured,it is great p
                     <div class="clip"></div>
                     <img src="images/rename2.png" style="width: 100px;">
                   </div>
-                  <p>This is some testimonial text for this month's CodePen challenge! This is some testimonial text for this month's CodePen challenge!</p>
+                  <p> 
+                    The school has a great balance between academics and extracurriculars. Our child has learned to balance both effectively,
+                     and we can see a boost in their creativity and critical thinking
+                    </p>
                   <div class="source">		
-                    <span>Testimonial Source</span>
+                    <span>Parent</span>
                   </div>
                   <span class="close quote">”</span>
                 </div>
@@ -1618,9 +1532,12 @@ The love and concern you have towards our institution is treasured,it is great p
                     <div class="clip"></div>
                     <img src="https://placehold.co/100">
                   </div>
-                  <p>This is some testimonial text for this month's CodePen challenge! This is some testimonial text for this month's CodePen challenge!</p>
+                  <p>
+                    We love the community feel at the school. It’s clear that the staff and teachers 
+                    care deeply about every child. Our child feels comfortable and valued here.
+                    </p>
                   <div class="source">		
-                    <span>Testimonial Source</span>
+                    <span>Parent/span>
                   </div>
                   <span class="close quote">”</span>
                 </div>
@@ -1640,7 +1557,7 @@ The love and concern you have towards our institution is treasured,it is great p
         <div class="card-body">
           <h4 class="card-title">Vision</h4>
           <p>Empowering minds, inspiring futures.</p>
-          <p>At [School Name], we envision a world where every student is equipped with the knowledge, skills, and values to excel in life and contribute positively to society. Our commitment to academic excellence and holistic development ensures that each student reaches their full potential and becomes a lifelong learner and responsible global citizen.</p>
+          <p>At Christian Montessori, we envision a world where every student is equipped with the knowledge, skills, and values to excel in life and contribute positively to society. Our commitment to academic excellence and holistic development ensures that each student reaches their full potential and becomes a lifelong learner and responsible global citizen.</p>
     
         </div>
       </div>
@@ -1648,7 +1565,7 @@ The love and concern you have towards our institution is treasured,it is great p
           <div class="card-body">
             <h4 class="card-title">Mission</h4>
             <p>Providing a nurturing environment for academic and personal growth.</p>
-            <p>[School Name] is dedicated to fostering a supportive and inclusive community 
+            <p>christian Montessori  dedicated to fostering a supportive and inclusive community 
               that promotes academic achievement, character development, and the pursuit of knowledge. 
               Our mission is to empower students through a dynamic curriculum, innovative teaching methods,
                and a commitment to 
@@ -1659,7 +1576,7 @@ The love and concern you have towards our institution is treasured,it is great p
         <div class="card  mission " style="width: 25%;">
           <div class="card-body">
             <h4 class="card-title">Our History</h4>
-            <p>Established in [Year], [School Name] has a rich history of providing quality education and shaping the future leaders of tomorrow. From our humble beginnings to the present day, we have consistently strived for excellence in education, adapting to the changing needs of our students and the evolving landscape of education.</p>
+            <p>Established in 1996, christian Montessori has a rich history of providing quality education and shaping the future leaders of tomorrow. From our humble beginnings to the present day, we have consistently strived for excellence in education, adapting to the changing needs of our students and the evolving landscape of education.</p>
         
           </div>
         </div> -->
@@ -1676,7 +1593,7 @@ The love and concern you have towards our institution is treasured,it is great p
             </div>
           </div>
         
-          <div class="card">
+          <div class="card" id="ourmission">
             <div class="box">
               <div class="content">
                 <h2>02</h2>
@@ -1687,7 +1604,7 @@ The love and concern you have towards our institution is treasured,it is great p
             </div>
           </div>
         
-          <div class="card" id="ourhistory">
+          <div class="card" >
             <div class="box">
               <div class="content" >
                 <h2>03</h2>
@@ -1818,7 +1735,7 @@ The love and concern you have towards our institution is treasured,it is great p
                         <ul style="flex-direction: column;">
                             <li><a href="index.htm">Home</a></li>uu
                             <li><a href="#">about</a></li>
-                            <li><a href="#">events</a></li>
+                            <li><a href="h.htm#Upcoming">events</a></li>
                              <li><a href="#">gallery</a></li>
                            
                            
@@ -1927,22 +1844,7 @@ document.querySelectorAll('.dropdon > a').forEach(dropdownLink => {
         this.parentNode.classList.toggle('active');
     });
 });
-function changeImage(tab) {
-        const image = document.getElementById("dynamicImage");
-        switch (tab) {
-            case 'about':
-                image.src = 'images/kids.jpg'; // Replace with your About Us image URL
-                break;
-            case 'benefits':
-                image.src = 'images/try.jpeg'; // Replace with your Benefits image URL
-                break;
-            case 'facilities':
-                image.src = 'images/try.jpeg'; // Replace with your School Facilities image URL
-                break;
-            default:
-                image.src = 'images/tryh.jpeg'; // Default image URL
-        }
-    }
+
 
 </script>
 <script>
@@ -1963,6 +1865,7 @@ function changeImage(tab) {
 
     node.addEventListener('animationend', handleAnimationEnd, {once: true});
   });
+
   animateCSS('.info-card', 'animate__slideInLeft');
 </script>
 <script>
